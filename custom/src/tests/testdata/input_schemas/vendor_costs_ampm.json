@@ -1,0 +1,68 @@
+{
+    "VendCost_Key" : {
+        "metadata": {},
+        "name": "VendCost_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_VendItem_Key" : {
+        "metadata": {},
+        "name": "VendCost_VendItem_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Type" : {
+        "metadata": {},
+        "name": "VendCost_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_EffDate" : {
+        "metadata": {},
+        "name": "VendCost_EffDate",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Is_Promo" : {
+        "metadata": {},
+        "name": "VendCost_Is_Promo",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Promo_End_Date" : {
+        "metadata": {},
+        "name": "VendCost_Promo_End_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Pack_Cost" : {
+        "metadata": {},
+        "name": "VendCost_Pack_Cost",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_VendCostZone_Key" : {
+        "metadata": {},
+        "name": "VendCost_VendCostZone_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Site_Key" : {
+        "metadata": {},
+        "name": "VendCost_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCost_Discontinue" : {
+        "metadata": {},
+        "name": "VendCost_Discontinue",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,463 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: "Contains custom Resources for standalone deployment"
+
+Parameters:
+  # Change this to your pipeline name
+  pPipelineName:
+    Description: "The name of your pipeline"
+    Type: "String"
+    Default: "ampm-pdi-ing"
+
+  # Change this to subtenant you are working in (mobconv, mobconva, candp)
+  pSubtenantId:
+    Description: "The Subtenant Id"
+    Type: "String"
+    Default: "mobconv"
+
+  # Change this to your target database
+  pDatabaseName:
+    Description: "Glue Database Name"
+    Type: "String"
+    Default: "transform_main_mobconv_pdi"
+
+  # Change this to your target table (pick one if multiple targets)
+  pTableName:
+    Description: "Glue Table Name"
+    Type: "String"
+    Default: "gl_accounts_ampm"
+
+  # Change this to target zone (transform, conform, enrich)
+  pTargetZone:
+    Description: "Zone of the target table "
+    Type: "String"
+    Default: "transform"
+
+  # Change the subtenant from mobconv to your target subtenant
+  pArtifactBucket:
+    Description: "Artifacts bucket for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/S3/mobconv/ArtifactBucket"
+
+  pProjectName:
+    Description: "Used in S3 Path if writing to custom area in transform zone"
+    Type: "String"
+    Default: "pdi"
+
+  pProjectTeam:
+    Description: "The name of your project team"
+    Type: "String"
+    Default: "thorntons"
+
+  pGlueJobName:
+    Description: "Glue Job Name"
+    Type: "String"
+    Default: "transform"
+
+  pTenant:
+    Description: "Tenant Id"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/Misc/pTenant"
+
+  pEnvironment:
+    Description: "Environment for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: /Datahub/Misc/pEnvironment
+
+  pRawBucket:
+    Description: "Bucket for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/S3/RawBucket"
+
+  pTransformBucket:
+    Description: "Bucket for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/S3/TransformBucket"
+
+  pConformBucket:
+    Description: "Bucket for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/S3/ConformBucket"
+
+  pEnrichBucket:
+    Description: "Bucket for current env"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/S3/EnrichBucket"
+
+  pHighWaterMark:
+    Description: "The name of high watermark table"
+    Type: "String"
+    Default: "high_watermark"
+
+  pCentralLogsFirehoseStreamName:
+    Description: Firehouse Stream for Logs
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /Datahub/Misc/CentralLogsFirehoseStreamName
+
+  pAccount:
+    Description: "Aws Account Name"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: /Datahub/Misc/pApp
+
+  pOrgName:
+    Description: "Name of the organization (all lowercase, no symbols or spaces)"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: /Datahub/Misc/pOrg
+
+  ## VPC definitions required for all Lambda functions
+  VpcSubnetA:
+    Description: VPC SubnetA
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /Datahub/Misc/VpcSubnetA
+
+  VpcSubnetB:
+    Description: VPC SubnetB
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /Datahub/Misc/VpcSubnetB
+
+  VpcSubnetC:
+    Description: VPC SubnetC
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /Datahub/Misc/VpcSubnetC
+
+  VpcOptionalSubnetA:
+    Description: "VPC Optional SubnetA"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/Misc/VpcOptionalSubnetA"
+
+  VpcOptionalSubnetB:
+    Description: "VPC Optional SubnetB"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/Misc/VpcOptionalSubnetB"
+
+  VpcOptionalSubnetC:
+    Description: "VPC Optional SubnetC"
+    Type: "AWS::SSM::Parameter::Value<String>"
+    Default: "/Datahub/Misc/VpcOptionalSubnetC"
+
+Conditions:
+  DeployOptionalSubnetA: !Not [!Equals [!Ref VpcOptionalSubnetA, "n/a"]]
+  DeployOptionalSubnetB: !Not [!Equals [!Ref VpcOptionalSubnetB, "n/a"]]
+  DeployOptionalSubnetC: !Not [!Equals [!Ref VpcOptionalSubnetC, "n/a"]]
+  EnableGlueFlex: !Or [!Equals [!Ref pEnvironment, dev], !Equals [!Ref pEnvironment, preprod]]
+  EnableEventRule: !Equals [!Ref pEnvironment, prod]
+  EnableRetries: !Not [!Equals [!Ref pEnvironment, dev]]
+
+######### Global Resources ###########
+### These properties are applied to all Lambda functions ###
+Globals:
+  Function:
+    Runtime: python3.9
+    Handler: lambda_function.lambda_handler
+    Environment:
+      Variables:
+        TENANT_ID: !Ref pTenant
+        SUBTENANT_ID: !Ref pSubtenantId
+        ENV: !Ref pEnvironment
+        ARTIFACTS_BUCKET: !Ref pArtifactBucket
+        RAW_BUCKET: !Ref pRawBucket
+        TRANSFORM_BUCKET: !Ref pTransformBucket
+        HWM_TABLE: !Ref pHighWaterMark
+        PROJECT: !Ref pProjectName
+        PIPELINE_NAME: !Ref pPipelineName
+        DATABASE_NAME: !Ref pDatabaseName
+        TABLE: !Ref pTableName
+        TARGET_ZONE: !Ref pTargetZone
+    Layers:
+      - !Sub "{{resolve:ssm:/Datahub/Lambda/${pSubtenantId}/LatestDatalakeLibraryLayer}}"
+      - !Sub "{{resolve:ssm:/Datahub/Lambda/${pSubtenantId}/custom_logger}}"
+    Tags:
+      cost-allocation-4: !Sub ${pProjectTeam}
+    KmsKeyArn: !Sub "{{resolve:ssm:/Datahub/KMS/${pSubtenantId}/InfraKeyId:1}}"
+    VpcConfig:
+      SecurityGroupIds:
+        - !Sub "{{resolve:ssm:/Datahub/EC2/${pSubtenantId}/SecurityGroup}}"
+      SubnetIds:
+        - !Ref VpcSubnetA
+        - !Ref VpcSubnetB
+        - !Ref VpcSubnetC
+        - !If [DeployOptionalSubnetA, Ref: VpcOptionalSubnetA, Ref: AWS::NoValue]
+        - !If [DeployOptionalSubnetB, Ref: VpcOptionalSubnetB, Ref: AWS::NoValue]
+        - !If [DeployOptionalSubnetC, Ref: VpcOptionalSubnetC, Ref: AWS::NoValue]
+    Timeout: 300
+    MemorySize: 128
+
+Resources:
+  rLambdaOctagonRegistration:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      FunctionName: !Sub "${pSubtenantId}-${pPipelineName}-octagon_registration"
+      Description: "Lambda function register pipeline to Octagon client"
+      CodeUri: ./src/octagon_registration
+      Handler: lambda_function.lambda_handler
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      Runtime: python3.9
+      Timeout: 300
+      MemorySize: 128
+
+  rLambdaHWMConfiguration:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      FunctionName: !Sub "${pSubtenantId}-${pPipelineName}-configuration"
+      Description: "Lambda function to read/write configuration file from DynamoDB"
+      CodeUri: ./src/configuration
+      Handler: lambda_function.lambda_handler
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      Runtime: python3.8
+      Timeout: 300
+      MemorySize: 128
+
+  rLambdaS3Listing:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      FunctionName: !Sub "${pSubtenantId}-${pPipelineName}-s3-listing"
+      Description: "Lambda function for listing s3 objects in raw bucket"
+      CodeUri: ./src/s3_listing
+      Handler: lambda_function.lambda_handler
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      Runtime: python3.8
+      Timeout: 900
+      MemorySize: 512
+
+  rLambdaOctagonLogger:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      FunctionName: !Sub "${pSubtenantId}-${pPipelineName}-octagon-logger"
+      Description: "Lambda function for logging messages to Octagon"
+      CodeUri: ./src/octagon_logger
+      Handler: lambda_function.lambda_handler
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      Runtime: python3.8
+      Timeout: 300
+      MemorySize: 128
+
+  rUnzipLoad:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      FunctionName: !Sub "${pSubtenantId}-${pPipelineName}-unzip-load"
+      Description: "Lambda function for invoking glue job"
+      CodeUri: ./src/unzip_load
+      Handler: lambda_function.lambda_handler
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      Runtime: python3.8
+      Timeout: 300
+      MemorySize: 1024
+
+
+  ######## Log Group #########
+  rLambdaS3ListingLogGroup:
+    Type: AWS::Logs::LogGroup
+    DependsOn: rLambdaS3Listing
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${rLambdaS3Listing}"
+      RetentionInDays: 14
+
+  ######## Log Group Subscription #########
+  rLambdaS3ListingSubscriptionFilter:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      RoleArn: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      LogGroupName: !Sub ${rLambdaS3ListingLogGroup}
+      DestinationArn: !Sub arn:aws:firehose:${AWS::Region}:${AWS::AccountId}:deliverystream/${pCentralLogsFirehoseStreamName}
+      FilterPattern: ""
+
+  rGlueTransform:
+    Type: AWS::Glue::Job
+    Properties:
+      Name: !Sub ${pSubtenantId}-${pPipelineName}-latest
+      Command:
+        Name: glueetl
+        PythonVersion: "3"
+        ScriptLocation: !Sub s3://${pArtifactBucket}/${pPipelineName}/src/build_dataset/transform.py
+      DefaultArguments:
+        "--enable-auto-scaling": true
+        "--enable-metrics": ""
+        "--enable-spark-ui": true
+        "--job-bookmark-option": job-bookmark-disable
+        "--spark-event-logs-path": !Sub s3://{{resolve:ssm:/Datahub/S3/WorkspaceBucket}}/${pSubtenantId}/${pPipelineName}/glue/sparkui/
+        "--enable-continuous-cloudwatch-log": true
+        "--enable-continuous-log-filter": true
+        "--enable-s3-parquet-optimized-committer": true
+        "--continuous-log-logGroup": !Sub /aws-glue/jobs/logs-v2/${pSubtenantId}-${pPipelineName}-latest
+        "--TempDir": !Sub s3://{{resolve:ssm:/Datahub/S3/WorkspaceBucket}}/${pSubtenantId}/${pPipelineName}/glue/temp/
+        "--extra-py-files": !Sub 's3://${pArtifactBucket}/${pPipelineName}/src/build_dataset/common.py,s3://sdlf-${pSubtenantId}-${AWS::AccountId}-artifacts/custom_logger.zip'
+        "--TENANT": !Sub ${pTenant}
+        "--ENV": !Sub ${pEnvironment}
+        "--SUBTENANT": !Sub ${pSubtenantId}
+        "--RAW_BUCKET": !Sub ${pRawBucket}
+        "--TRANSFORM_BUCKET": !Sub ${pTransformBucket}
+        "--ARTIFACTS_BUCKET": !Sub ${pArtifactBucket}
+        "--HWM_TABLE": !Sub ${pHighWaterMark}
+        "--PROJECT": !Sub ${pProjectName}
+        "--PIPELINE": !Sub ${pPipelineName}
+        "--DATABASE": !Sub ${pDatabaseName}
+        "--TABLE": !Sub ${pTableName}
+        "--TARGET_S3_PATH": !Sub s3://${pTransformBucket}/custom/main/${pSubtenantId}/${pProjectName}/${pTableName}
+        "--CRAWLER": !Ref rGlueCrawler
+      ExecutionProperty:
+        MaxConcurrentRuns: 1
+      Tags:
+        cost-allocation-1: !Sub ${pSubtenantId}
+        cost-allocation-4: !Sub ${pProjectTeam}
+        cost-allocation-5: !Sub ${pPipelineName}
+      Connections:
+        Connections:
+          - !If [DeployOptionalSubnetA, !Sub "${pSubtenantId}-optional-network-connection-${AWS::Region}a", Ref: AWS::NoValue]
+          - !If [DeployOptionalSubnetB, !Sub "${pSubtenantId}-optional-network-connection-${AWS::Region}b", Ref: AWS::NoValue]
+          - !If [DeployOptionalSubnetC, !Sub "${pSubtenantId}-optional-network-connection-${AWS::Region}c", Ref: AWS::NoValue]
+          - !Sub ${pSubtenantId}-network-connection-${AWS::Region}a
+          - !Sub ${pSubtenantId}-network-connection-${AWS::Region}b
+          - !Sub ${pSubtenantId}-network-connection-${AWS::Region}c
+      MaxRetries: !If [EnableRetries, 1, 0]
+      WorkerType: G.1X
+      NumberOfWorkers: 20
+      Timeout: 90
+      GlueVersion: 4.0
+      ExecutionClass: !If [EnableGlueFlex, FLEX, STANDARD]
+      SecurityConfiguration: !Sub ${pSubtenantId}-glue-security-configuration-v2
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+
+  rGlueTransformLogGroup:
+    Type: AWS::Logs::LogGroup
+    DependsOn: rGlueTransform
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${rGlueTransform}"
+      RetentionInDays: 14
+
+  rGlueTransformErrorLogGroup:
+    Type: AWS::Logs::LogGroup
+    DependsOn: rGlueTransform
+    Properties:
+      LogGroupName: !Sub "/aws-glue/jobs/${pSubtenantId}-glue-security-configuration-v2-role/service-role/Subtenant-${pSubtenantId}-${pPipelineName}-ExecutionRole/error"
+      RetentionInDays: 14
+
+  rGlueTransformSubscriptionFilter:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      RoleArn: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+      LogGroupName: !Sub ${rGlueTransformLogGroup}
+      DestinationArn: !Sub arn:aws:firehose:${AWS::Region}:${AWS::AccountId}:deliverystream/${pCentralLogsFirehoseStreamName}
+      FilterPattern: ""
+
+  rGlueTransformErrorLogGroupSubscriptionFilter:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      RoleArn: !Sub '{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}'
+      LogGroupName: !Ref rGlueTransformErrorLogGroup
+      DestinationArn: !Sub 'arn:aws:firehose:${AWS::Region}:${AWS::AccountId}:deliverystream/${pCentralLogsFirehoseStreamName}'
+      FilterPattern: ""
+
+  rGlueCrawler:
+    Type: AWS::Glue::Crawler
+    Properties:
+      DatabaseName: !Sub ${pDatabaseName}
+      Name: !Sub ${pSubtenantId}-${pPipelineName}-crawler
+      Tags:
+        cost-allocation-1: !Sub ${pSubtenantId}
+        cost-allocation-4: !Sub ${pProjectTeam}
+        cost-allocation-5: !Sub ${pPipelineName}
+      # Only keep the Configuration section if you are writing to multiple tables
+      # Change TableLevelConfiguration to the number of folders deep your target table is
+      # More info: https://docs.aws.amazon.com/glue/latest/dg/crawler-configuration.html#crawler-table-level
+      #Configuration: !Sub |
+      #  {
+      #    "Version": 1.0,
+      #    "Grouping": {
+      #      "TableLevelConfiguration":6
+      #    },
+      #    "CrawlerOutput": {
+      #      "Partitions": {
+      #        "AddOrUpdateBehavior": "InheritFromTable"
+      #      }
+      #    }
+      #  }
+      SchemaChangePolicy:
+        UpdateBehavior: LOG
+      Targets:
+      # Change path(s) to target table(s) s3 locations
+        S3Targets:
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/gl_account_majors_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/gl_account_types_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/gl_accounts_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_groups_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_packages_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_upcs_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/items_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/profit_centers_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/retail_packages_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/retail_prices_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/sites_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/vendors_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/vendor_costzonesites_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/paperwork_batches_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/vendor_costs_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/vendor_items_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/vendor_item_attributes_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_manufacturers_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_brands_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_group_membership_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_group_levels_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_standard_info_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_sizes_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_attributes_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_attribute_dates_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_attrib_valueitemdetails_ampm/"
+          - Path: !Sub "s3://${pTransformBucket}/custom/main/${pSubtenantId}/pdi/dimension_tables_parquet/item_attrib_valuegroups_ampm/"
+      Role: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+
+  rStateMachine:
+    Type: AWS::StepFunctions::StateMachine
+    Properties:
+      StateMachineName: !Sub sdlf-${pSubtenantId}-${pPipelineName}-Custom-SM
+      StateMachineType: STANDARD
+      DefinitionS3Location:
+        Bucket: !Sub ${pArtifactBucket}
+        Key: !Sub ${pPipelineName}/state_machine.asl.json
+        Fn::Transform:
+          Name: StateMachineWithS3Object
+          Parameters:
+            Bucket: !Sub ${pArtifactBucket}
+            Key: !Sub ${pPipelineName}/state_machine.asl.json
+      DefinitionSubstitutions:
+        OctagonRegistrationLambda: !GetAtt rLambdaOctagonRegistration.Arn
+        HWMConfigurationLambda: !GetAtt rLambdaHWMConfiguration.Arn
+        S3ListingLambda: !GetAtt rLambdaS3Listing.Arn
+        OctagonLogger: !GetAtt rLambdaOctagonLogger.Arn
+        UnzipLoad: !GetAtt [rUnzipLoad, Arn]
+        TransformGlueJob: !Ref rGlueTransform
+        GlueCrawler: !Ref rGlueCrawler
+      RoleArn: !Sub "{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole:1}}"
+
+  # SSM Parameter is required for activating pipeline via Octagon
+  rSsmStateMachineStandalone:
+    Type: "AWS::SSM::Parameter"
+    Properties:
+      Name: !Sub "/Datahub/SM/${pSubtenantId}/standalone/${pPipelineName}-SM"
+      Type: "String"
+      Value: !Ref rStateMachine
+      Description: !Sub "ARN of the standalone ${pSubtenantId} ${pPipelineName} State Machine"
+
+  # Change Description and ScheduleExpression to desired frequency
+  rTriggerCustomRuleStandAlone:
+    Type: "AWS::Scheduler::Schedule"
+    Properties:
+      Name: !Sub sdlf-${pSubtenantId}-${pPipelineName}-standalone-trigger
+      Description: Cron to start my SDLF standalone Step Function to run 3x daily
+      GroupName: !Sub subtenant_${pSubtenantId}
+      State: !If [EnableEventRule, ENABLED, DISABLED]
+      FlexibleTimeWindow:
+        Mode: "OFF"
+      ScheduleExpression: 'cron(30 11 * * ? *)'
+      Target:
+        Arn: !Ref rStateMachine
+        RoleArn: !Sub '{{resolve:ssm:/Datahub/IAM/${pSubtenantId}/ExecutionRole}}'
+        Input: !Sub |
+          {
+            "team": "${pSubtenantId}",
+            "pipeline": "main",
+            "pipeline_stage": "standalone",
+            "dataset": "${pPipelineName}",
+            "org": "${pOrgName}",
+            "app": "${pAccount}",
+            "env": "${pEnvironment}"
+          }

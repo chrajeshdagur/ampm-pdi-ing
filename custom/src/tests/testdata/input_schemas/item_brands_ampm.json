@@ -1,0 +1,32 @@
+{
+    "ItemBrand_Key" : {
+        "metadata": {},
+        "name": "ItemBrand_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemBrand_ID" : {
+        "metadata": {},
+        "name": "ItemBrand_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemBrand_Description" : {
+        "metadata": {},
+        "name": "ItemBrand_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemBrand_ItemBrandType_Key" : {
+        "metadata": {},
+        "name": "ItemBrand_ItemBrandType_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,31 @@
+# gazelle:map_kind py_binary glue_4_py_binary //dataworx:defs.bzl
+# gazelle:map_kind py_library glue_4_py_library //dataworx:defs.bzl
+# gazelle:map_kind py_test glue_4_py_test //dataworx:defs.bzl
+
+load("@bp_bazel//dataworx:defs.bzl", "glue_4_py_library")
+
+# gazelle:python_root
+# gazelle:resolve py custom_json_logger @bp_bazel//dataworx/custom_json_logger/custom_json_logger:custom_json_logger.glue_4
+# gazelle:resolve py datalake_library.octagon @aws_data_lake//:libs
+
+glue_4_py_library(
+    name = "octagon_logger",
+    srcs = [
+        "__init__.py",
+        "lambda_function.py",
+    ],
+    imports = [
+        ".",
+        "../../../../../..",
+    ],
+    visibility = [
+        "//:__subpackages__",
+        "//mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/tests:__subpackages__",
+    ],
+    deps = [
+        "@aws_data_lake//:libs_glue4",
+        "@bp_bazel//dataworx/custom_json_logger/custom_json_logger:custom_json_logger.glue_4",
+        "@glue_4_python_deps_boto3//:pkg",
+        "@glue_4_python_deps_botocore//:pkg",
+    ],
+)

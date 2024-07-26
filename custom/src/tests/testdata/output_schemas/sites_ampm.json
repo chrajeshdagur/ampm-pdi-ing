@@ -1,0 +1,565 @@
+{
+    "Site_Key" : {
+        "metadata": {},
+        "name": "Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_ID" : {
+        "metadata": {},
+        "name": "Site_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Description" : {
+        "metadata": {},
+        "name": "Site_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Address1" : {
+        "metadata": {},
+        "name": "Site_Address1",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Address2" : {
+        "metadata": {},
+        "name": "Site_Address2",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Address3" : {
+        "metadata": {},
+        "name": "Site_Address3",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_City" : {
+        "metadata": {},
+        "name": "Site_City",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_State" : {
+        "metadata": {},
+        "name": "Site_State",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Zip" : {
+        "metadata": {},
+        "name": "Site_Zip",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Phone" : {
+        "metadata": {},
+        "name": "Site_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Alt_Phone" : {
+        "metadata": {},
+        "name": "Site_Alt_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Fax" : {
+        "metadata": {},
+        "name": "Site_Fax",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Modem" : {
+        "metadata": {},
+        "name": "Site_Modem",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Phone_Formatted" : {
+        "metadata": {},
+        "name": "Site_Phone_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Alt_Phone_Formatted" : {
+        "metadata": {},
+        "name": "Site_Alt_Phone_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Fax_Formatted" : {
+        "metadata": {},
+        "name": "Site_Fax_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Modem_Formatted" : {
+        "metadata": {},
+        "name": "Site_Modem_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Contact" : {
+        "metadata": {},
+        "name": "Site_Contact",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Email_Name" : {
+        "metadata": {},
+        "name": "Site_Email_Name",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Email_Address" : {
+        "metadata": {},
+        "name": "Site_Email_Address",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_External_ID" : {
+        "metadata": {},
+        "name": "Site_External_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Template" : {
+        "metadata": {},
+        "name": "Site_Template",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Uses_InSite" : {
+        "metadata": {},
+        "name": "Site_Uses_InSite",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Uses_PD" : {
+        "metadata": {},
+        "name": "Site_Uses_PD",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Uses_VU" : {
+        "metadata": {},
+        "name": "Site_Uses_VU",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Receives_Downloads" : {
+        "metadata": {},
+        "name": "Site_Receives_Downloads",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Org_Key" : {
+        "metadata": {},
+        "name": "Site_Org_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DelRte_Key" : {
+        "metadata": {},
+        "name": "Site_DelRte_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DelRte_Stop" : {
+        "metadata": {},
+        "name": "Site_DelRte_Stop",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_SPLC_Code" : {
+        "metadata": {},
+        "name": "Site_SPLC_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_SIC_Code" : {
+        "metadata": {},
+        "name": "Site_SIC_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Fuel_COGS_Date" : {
+        "metadata": {},
+        "name": "Site_Fuel_COGS_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Used_For_Drop_Ships" : {
+        "metadata": {},
+        "name": "Site_Used_For_Drop_Ships",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Deliv_Directions" : {
+        "metadata": {},
+        "name": "Site_Deliv_Directions",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Def_Fuel_Origin_By" : {
+        "metadata": {},
+        "name": "Site_Def_Fuel_Origin_By",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Fuel_Vend_Auths" : {
+        "metadata": {},
+        "name": "Site_Fuel_Vend_Auths",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_TrmnlGrp_Key" : {
+        "metadata": {},
+        "name": "Site_TrmnlGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DropShip_Site_Key" : {
+        "metadata": {},
+        "name": "Site_DropShip_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Pass_On_Min_Freight_Chgs" : {
+        "metadata": {},
+        "name": "Site_Pass_On_Min_Freight_Chgs",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Override_Min_Load" : {
+        "metadata": {},
+        "name": "Site_Override_Min_Load",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Override_Min_Load_Amt" : {
+        "metadata": {},
+        "name": "Site_Override_Min_Load_Amt",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DispArea_Key" : {
+        "metadata": {},
+        "name": "Site_DispArea_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Is_Terminal" : {
+        "metadata": {},
+        "name": "Site_Is_Terminal",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_County" : {
+        "metadata": {},
+        "name": "Site_County",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Tax_ID" : {
+        "metadata": {},
+        "name": "Site_Tax_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Linked_RMS" : {
+        "metadata": {},
+        "name": "Site_Linked_RMS",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Exported_FocalPoint" : {
+        "metadata": {},
+        "name": "Site_Exported_FocalPoint",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_TaxSchedCat_Key" : {
+        "metadata": {},
+        "name": "Site_TaxSchedCat_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Host_Key" : {
+        "metadata": {},
+        "name": "Host_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Invty_COGS_Date" : {
+        "metadata": {},
+        "name": "Site_Invty_COGS_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_Stl_Date" : {
+        "metadata": {},
+        "name": "Site_Last_Stl_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_StlAccr_Date" : {
+        "metadata": {},
+        "name": "Site_Last_StlAccr_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_Comm_Date" : {
+        "metadata": {},
+        "name": "Site_Last_Comm_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_CommAccr_Date" : {
+        "metadata": {},
+        "name": "Site_Last_CommAccr_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_FuelOrdRule_Key" : {
+        "metadata": {},
+        "name": "Site_FuelOrdRule_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Allow_Delivs_After_Hours" : {
+        "metadata": {},
+        "name": "Site_Allow_Delivs_After_Hours",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Is_MasterSite" : {
+        "metadata": {},
+        "name": "Site_Is_MasterSite",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_MasterSite_Key" : {
+        "metadata": {},
+        "name": "Site_MasterSite_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_FPZone_Key" : {
+        "metadata": {},
+        "name": "Site_FPZone_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_TrmnlCtlNo_Key" : {
+        "metadata": {},
+        "name": "Site_TrmnlCtlNo_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Deliv_TankRd_Method" : {
+        "metadata": {},
+        "name": "Site_Deliv_TankRd_Method",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_GPS_Longitude" : {
+        "metadata": {},
+        "name": "Site_GPS_Longitude",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_GPS_Latitude" : {
+        "metadata": {},
+        "name": "Site_GPS_Latitude",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Competitor_Radius" : {
+        "metadata": {},
+        "name": "Site_Competitor_Radius",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Competitor_Fuel_Pricing_Alert_Trait_Key" : {
+        "metadata": {},
+        "name": "Site_Competitor_Fuel_Pricing_Alert_Trait_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_GL_Status" : {
+        "metadata": {},
+        "name": "Site_GL_Status",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Def_Warehouse_Site_Key" : {
+        "metadata": {},
+        "name": "Site_Def_Warehouse_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Incl_In_WhPrcNtc" : {
+        "metadata": {},
+        "name": "Site_Incl_In_WhPrcNtc",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Is_BOLSite" : {
+        "metadata": {},
+        "name": "Site_Is_BOLSite",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Is_Trmnl_Key" : {
+        "metadata": {},
+        "name": "Site_Is_Trmnl_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_Royalty_Stl_Date" : {
+        "metadata": {},
+        "name": "Site_Last_Royalty_Stl_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Last_Royalty_StlAccr_Date" : {
+        "metadata": {},
+        "name": "Site_Last_Royalty_StlAccr_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_WI_Third_Party_Owned" : {
+        "metadata": {},
+        "name": "Site_WI_Third_Party_Owned",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_WI_Cust_Key" : {
+        "metadata": {},
+        "name": "Site_WI_Cust_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_WI_Vend_Key" : {
+        "metadata": {},
+        "name": "Site_WI_Vend_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_WI_CustLoc_Key" : {
+        "metadata": {},
+        "name": "Site_WI_CustLoc_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_TimeZone_ID" : {
+        "metadata": {},
+        "name": "Site_TimeZone_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Allow_Neg_Bulk_Fuel_Invty" : {
+        "metadata": {},
+        "name": "Site_Allow_Neg_Bulk_Fuel_Invty",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DEP_Dest_Code" : {
+        "metadata": {},
+        "name": "Site_DEP_Dest_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_DestTaxType_TaxSchedCat_key" : {
+        "metadata": {},
+        "name": "Site_DestTaxType_TaxSchedCat_key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Is_ExxonMobil_Distributor" : {
+        "metadata": {},
+        "name": "Site_Is_ExxonMobil_Distributor",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Distributor_ID" : {
+        "metadata": {},
+        "name": "Site_Distributor_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Override_Transfer_Pricing" : {
+        "metadata": {},
+        "name": "Site_Override_Transfer_Pricing",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Use_Xfer_Price_Rules_On_Site_Orders" : {
+        "metadata": {},
+        "name": "Site_Use_Xfer_Price_Rules_On_Site_Orders",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Unit_Basis_For_Site_Orders" : {
+        "metadata": {},
+        "name": "Site_Unit_Basis_For_Site_Orders",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Transfer_Pricing_Date_Override" : {
+        "metadata": {},
+        "name": "Site_Transfer_Pricing_Date_Override",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_Transfer_Pricing_Freight_Date_Override" : {
+        "metadata": {},
+        "name": "Site_Transfer_Pricing_Freight_Date_Override",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

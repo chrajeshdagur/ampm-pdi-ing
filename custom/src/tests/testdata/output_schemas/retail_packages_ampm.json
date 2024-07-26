@@ -1,0 +1,97 @@
+{
+    "RtlPkg_Key" : {
+        "metadata": {},
+        "name": "RtlPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_Code" : {
+        "metadata": {},
+        "name": "RtlPkg_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_Type" : {
+        "metadata": {},
+        "name": "RtlPkg_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_RtlPkg_Key" : {
+        "metadata": {},
+        "name": "RtlPkg_RtlPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_Quantity" : {
+        "metadata": {},
+        "name": "RtlPkg_Quantity",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_Disabled" : {
+        "metadata": {},
+        "name": "RtlPkg_Disabled",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_Item_Quantity" : {
+        "metadata": {},
+        "name": "RtlPkg_Item_Quantity",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_IsInvtyValPkg" : {
+        "metadata": {},
+        "name": "RtlPkg_IsInvtyValPkg",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPkg_IsNotForFranchiseeUse" : {
+        "metadata": {},
+        "name": "RtlPkg_IsNotForFranchiseeUse",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

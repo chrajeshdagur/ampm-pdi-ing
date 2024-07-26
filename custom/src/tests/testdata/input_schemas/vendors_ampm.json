@@ -1,0 +1,728 @@
+{
+    "Vend_Key" : {
+        "metadata": {},
+        "name": "Vend_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_ID" : {
+        "metadata": {},
+        "name": "Vend_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Tax_ID" : {
+        "metadata": {},
+        "name": "Vend_Tax_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Tax_ID_Type" : {
+        "metadata": {},
+        "name": "Vend_Tax_ID_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Tax_ID_Is_Encrypted" : {
+        "metadata": {},
+        "name": "Vend_Tax_ID_Is_Encrypted",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Tax_ID_Masked" : {
+        "metadata": {},
+        "name": "Vend_Tax_ID_Masked",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_TIN_Status" : {
+        "metadata": {},
+        "name": "Vend_TIN_Status",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_DUNS_ID" : {
+        "metadata": {},
+        "name": "Vend_DUNS_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_SCAC_ID" : {
+        "metadata": {},
+        "name": "Vend_SCAC_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Description" : {
+        "metadata": {},
+        "name": "Vend_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Alt_Description" : {
+        "metadata": {},
+        "name": "Vend_Alt_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Address_1" : {
+        "metadata": {},
+        "name": "Vend_Address_1",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Address_2" : {
+        "metadata": {},
+        "name": "Vend_Address_2",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Address_3" : {
+        "metadata": {},
+        "name": "Vend_Address_3",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_City" : {
+        "metadata": {},
+        "name": "Vend_City",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_State_Key" : {
+        "metadata": {},
+        "name": "Vend_State_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Postal_Code" : {
+        "metadata": {},
+        "name": "Vend_Postal_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Phone" : {
+        "metadata": {},
+        "name": "Vend_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Alt_Phone" : {
+        "metadata": {},
+        "name": "Vend_Alt_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_FAX" : {
+        "metadata": {},
+        "name": "Vend_FAX",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Masked_FAX" : {
+        "metadata": {},
+        "name": "Vend_Masked_FAX",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Masked_Phone" : {
+        "metadata": {},
+        "name": "Vend_Masked_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Masked_Alt_Phone" : {
+        "metadata": {},
+        "name": "Vend_Masked_Alt_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Contact_Name" : {
+        "metadata": {},
+        "name": "Vend_Contact_Name",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Email_Address" : {
+        "metadata": {},
+        "name": "Vend_Email_Address",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_On_Hold" : {
+        "metadata": {},
+        "name": "Vend_On_Hold",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Class" : {
+        "metadata": {},
+        "name": "Vend_Class",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_VendType_Key" : {
+        "metadata": {},
+        "name": "Vend_VendType_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Internal_Vendor" : {
+        "metadata": {},
+        "name": "Vend_Internal_Vendor",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Export_Vendor_ID" : {
+        "metadata": {},
+        "name": "Vend_Export_Vendor_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Use_Default_Terms" : {
+        "metadata": {},
+        "name": "Vend_Use_Default_Terms",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Default_APTerms_Key" : {
+        "metadata": {},
+        "name": "Vend_Default_APTerms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_APTerms_Key" : {
+        "metadata": {},
+        "name": "Vend_Fuel_APTerms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Invc_Units" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Invc_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Invc_Has_Frt" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Invc_Has_Frt",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Invc_Has_DefTax" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Invc_Has_DefTax",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Cost_Begin_Time" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Cost_Begin_Time",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Cost_Life_Units" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Cost_Life_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Cost_Lifetime" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Cost_Lifetime",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_InterComp_Invc_Option" : {
+        "metadata": {},
+        "name": "Vend_Fuel_InterComp_Invc_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Generate_Frt_Invoices" : {
+        "metadata": {},
+        "name": "Vend_Generate_Frt_Invoices",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenFrt_Invc_Method" : {
+        "metadata": {},
+        "name": "Vend_GenFrt_Invc_Method",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenFrt_Terms_Key" : {
+        "metadata": {},
+        "name": "Vend_GenFrt_Terms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenFrt_Invc_Remit" : {
+        "metadata": {},
+        "name": "Vend_GenFrt_Invc_Remit",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenFrt_Remit_Export_File" : {
+        "metadata": {},
+        "name": "Vend_GenFrt_Remit_Export_File",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenFrt_Remit_File_Path" : {
+        "metadata": {},
+        "name": "Vend_GenFrt_Remit_File_Path",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_SPLC_Code" : {
+        "metadata": {},
+        "name": "Vend_SPLC_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_OD_Vehicle_Required" : {
+        "metadata": {},
+        "name": "Vend_OD_Vehicle_Required",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_OD_Driver_Required" : {
+        "metadata": {},
+        "name": "Vend_OD_Driver_Required",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_OD_Time_Required" : {
+        "metadata": {},
+        "name": "Vend_OD_Time_Required",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_OD_Odometer_Required" : {
+        "metadata": {},
+        "name": "Vend_OD_Odometer_Required",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Recon_Zero_Frt" : {
+        "metadata": {},
+        "name": "Vend_Recon_Zero_Frt",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_County" : {
+        "metadata": {},
+        "name": "Vend_County",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Default_Curr_ID" : {
+        "metadata": {},
+        "name": "Vend_Default_Curr_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Allow_At_Site" : {
+        "metadata": {},
+        "name": "Vend_Allow_At_Site",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Deactivated" : {
+        "metadata": {},
+        "name": "Vend_Deactivated",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Deactivated_Date" : {
+        "metadata": {},
+        "name": "Vend_Deactivated_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_OneTime" : {
+        "metadata": {},
+        "name": "Vend_OneTime",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Recon_Before_Billing" : {
+        "metadata": {},
+        "name": "Vend_Recon_Before_Billing",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Dispatch_Instructions" : {
+        "metadata": {},
+        "name": "Vend_Dispatch_Instructions",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Precision" : {
+        "metadata": {},
+        "name": "Vend_Precision",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_BOL_Confirmation_Required" : {
+        "metadata": {},
+        "name": "Vend_BOL_Confirmation_Required",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_BOL_Confirmation_Units" : {
+        "metadata": {},
+        "name": "Vend_BOL_Confirmation_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Use_BOL_LiftDate" : {
+        "metadata": {},
+        "name": "Vend_Use_BOL_LiftDate",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_All_Sites" : {
+        "metadata": {},
+        "name": "Vend_All_Sites",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Exp_Fuel_Orders" : {
+        "metadata": {},
+        "name": "Vend_Exp_Fuel_Orders",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Exp_FuelOrd_Format" : {
+        "metadata": {},
+        "name": "Vend_Exp_FuelOrd_Format",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Exp_FuelOrd_Path" : {
+        "metadata": {},
+        "name": "Vend_Exp_FuelOrd_Path",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Created_Date" : {
+        "metadata": {},
+        "name": "Vend_Created_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Mixed_Load_Min_Vol_Option" : {
+        "metadata": {},
+        "name": "Vend_Mixed_Load_Min_Vol_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Mixed_Split_Load_Purchase_Option" : {
+        "metadata": {},
+        "name": "Vend_Mixed_Split_Load_Purchase_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Mixed_Split_Load_Sale_Option" : {
+        "metadata": {},
+        "name": "Vend_Mixed_Split_Load_Sale_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Mixed_Load_Min_Rate_Option" : {
+        "metadata": {},
+        "name": "Vend_Mixed_Load_Min_Rate_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Supplies_WI_Prods" : {
+        "metadata": {},
+        "name": "Vend_Supplies_WI_Prods",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_TransportMode_Key" : {
+        "metadata": {},
+        "name": "Vend_TransportMode_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Credit_Invoice_Due_Date_Option" : {
+        "metadata": {},
+        "name": "Vend_Credit_Invoice_Due_Date_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_BusCal_Key" : {
+        "metadata": {},
+        "name": "Vend_BusCal_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_BOLs_Invc_By_Prod_Tax_Group" : {
+        "metadata": {},
+        "name": "Vend_BOLs_Invc_By_Prod_Tax_Group",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Doc_Language_Key" : {
+        "metadata": {},
+        "name": "Vend_Doc_Language_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_TaxAuth_Key" : {
+        "metadata": {},
+        "name": "Vend_TaxAuth_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_TaxTypeCode_Key" : {
+        "metadata": {},
+        "name": "Vend_TaxTypeCode_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_TaxTypeSubCatCode_Key" : {
+        "metadata": {},
+        "name": "Vend_TaxTypeSubCatCode_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_FuelInv_Date" : {
+        "metadata": {},
+        "name": "Vend_Match_FuelInv_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_FrtInv_Date" : {
+        "metadata": {},
+        "name": "Vend_Match_FrtInv_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_TaxInv_Date" : {
+        "metadata": {},
+        "name": "Vend_Match_TaxInv_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_Days_Before" : {
+        "metadata": {},
+        "name": "Vend_Match_Days_Before",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_Days_After" : {
+        "metadata": {},
+        "name": "Vend_Match_Days_After",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Rnd_SurChg_Frt_Precision" : {
+        "metadata": {},
+        "name": "Vend_Rnd_SurChg_Frt_Precision",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Rnd_SurChg_Frt" : {
+        "metadata": {},
+        "name": "Vend_Rnd_SurChg_Frt",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Credit_Invoice_Due_Date_Option" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Credit_Invoice_Due_Date_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Calc_WI_Prch_Taxes" : {
+        "metadata": {},
+        "name": "Vend_Calc_WI_Prch_Taxes",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_Export_POs" : {
+        "metadata": {},
+        "name": "Vend_WI_Export_POs",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_PO_Export_Format" : {
+        "metadata": {},
+        "name": "Vend_WI_PO_Export_Format",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_PO_Export_FilePath" : {
+        "metadata": {},
+        "name": "Vend_WI_PO_Export_FilePath",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_PO_Export_File_Option" : {
+        "metadata": {},
+        "name": "Vend_WI_PO_Export_File_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_PO_Export_AccountNo" : {
+        "metadata": {},
+        "name": "Vend_WI_PO_Export_AccountNo",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_WI_PO_Export_Whrs_TransTable_Key" : {
+        "metadata": {},
+        "name": "Vend_WI_PO_Export_Whrs_TransTable_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_National_Account" : {
+        "metadata": {},
+        "name": "Vend_National_Account",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Default_Buyback_RefNo" : {
+        "metadata": {},
+        "name": "Vend_Default_Buyback_RefNo",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Approval_Req" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Approval_Req",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Inv_Variance" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Inv_Variance",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Default_APTerms_Key" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Default_APTerms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Recon_Before_Billing" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Recon_Before_Billing",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_RequireVehicleDriverOption" : {
+        "metadata": {},
+        "name": "Vend_RequireVehicleDriverOption",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_AutoGen_DeferTax_Invoice" : {
+        "metadata": {},
+        "name": "Vend_AutoGen_DeferTax_Invoice",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_DeferTax_Pmt_Terms_Key" : {
+        "metadata": {},
+        "name": "Vend_DeferTax_Pmt_Terms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_GenWhsle_AR_Invoice" : {
+        "metadata": {},
+        "name": "Vend_GenWhsle_AR_Invoice",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_DeferTax_AR_Pmt_Terms_Key" : {
+        "metadata": {},
+        "name": "Vend_DeferTax_AR_Pmt_Terms_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Hazmat_No" : {
+        "metadata": {},
+        "name": "Vend_Hazmat_No",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Itemize_Per_Load_Freight" : {
+        "metadata": {},
+        "name": "Vend_Itemize_Per_Load_Freight",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Use_Vehicle_Profit_Site_Custs" : {
+        "metadata": {},
+        "name": "Vend_Use_Vehicle_Profit_Site_Custs",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Use_Vehicle_Profit_Site_Sites" : {
+        "metadata": {},
+        "name": "Vend_Use_Vehicle_Profit_Site_Sites",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Match_FuelInv_Site" : {
+        "metadata": {},
+        "name": "Vend_Match_FuelInv_Site",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Freight_InvoicedByLoad" : {
+        "metadata": {},
+        "name": "Vend_Freight_InvoicedByLoad",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Export" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Export",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Expt_Format" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Expt_Format",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Expt_FilePath" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Expt_FilePath",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Buyback_Expt_File_Option" : {
+        "metadata": {},
+        "name": "Vend_Buyback_Expt_File_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Fuel_Cost_Negative_Allowed" : {
+        "metadata": {},
+        "name": "Vend_Fuel_Cost_Negative_Allowed",
+        "nullable": true,
+        "type": "string"
+    },
+    "Vend_Use_Vehicle_Profit_Site_Purchases" : {
+        "metadata": {},
+        "name": "Vend_Use_Vehicle_Profit_Site_Purchases",
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,5 @@
+ItemAttrDate_Key,ItemAttrDate_ItemAttr_Key,ItemAttrDate_Eff_Date,ItemAttrDate_Specify_Allowed_Values,ItemAttrDate_POS_Translations,ItemAttrDate_Overall_Default_Value,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+1,1,1983-06-01 00:00:00,-1,0,N/A,00000000000017CE,20240223item_attribute_dates_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+2,12,1983-06-01 00:00:00,-1,0,,000000000002295E,20240223item_attribute_dates_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+3,14,1983-06-01 00:00:00,-1,0,1,00000000000017F0,20240223item_attribute_dates_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+89,48,2023-07-19 00:00:00,0,0,0,000000000040EF32,20240223item_attribute_dates_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

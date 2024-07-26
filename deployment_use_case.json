@@ -1,0 +1,47 @@
+{
+    "dev": {
+        "use_case_list": [
+            {
+                "name": "ampm-pdi-ing",
+                "sdlf_version": "2",
+                "target_database": "transform_main_mobconv_pdi",
+                "use_case_name": "thorntons-fna",
+                "use_case_email": "agnivesh.das@bp.com",
+                "custom_logger_notification": {
+                    "email_target": "agnivesh.das@bp.com"
+                }
+            }
+        ]
+    },
+    "test": {
+        "use_case_list": []
+    },
+    "preprod": {
+        "use_case_list": [
+            {
+                "name": "ampm-pdi-ing",
+                "sdlf_version": "2",
+                "target_database": "transform_main_mobconv_pdi",
+                "use_case_name": "thorntons-fna",
+                "use_case_email": "GDSTMCOpsMI@bp.com",
+                "custom_logger_notification": {
+                    "email_target": "agnivesh.das@bp.com"
+                }
+            }
+        ]
+    },
+    "prod": {
+        "use_case_list": [
+            {
+                "name": "ampm-pdi-ing",
+                "sdlf_version": "2",
+                "target_database": "transform_main_mobconv_pdi",
+                "use_case_name": "thorntons-fna",
+                "use_case_email": "GDSTMCOpsMI@bp.com",
+                "custom_logger_notification": {
+                    "email_target": "GGDCMDataWorxMCNAMigrationTeam@bp.com"
+                }
+            }
+        ]
+    }
+}

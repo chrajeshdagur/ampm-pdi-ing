@@ -1,0 +1,5 @@
+ItemAttr_Key,ItemAttr_Code,ItemAttr_Is_Standard,ItemAttr_Used_For_Pricing,ItemAttr_Precedence,ItemAttr_SetValues_Method,ItemAttr_Format,ItemAttr_Length,ItemAttr_Decimals,ItemAttr_Security_Group,ts
+1,PDISA Section Audit Count Method,-1,0,0,0,0,15,0,0,00000000000017CC
+2,POS 911 Fee Required,-1,0,0,2,1,2,0,1,00000000000017D2
+3,POS Age Limit 1 Applies,-1,0,0,2,1,2,0,2,00000000000017D4
+4,POS Age Limit 2 Applies,-1,0,0,2,1,2,0,2,00000000000017D6

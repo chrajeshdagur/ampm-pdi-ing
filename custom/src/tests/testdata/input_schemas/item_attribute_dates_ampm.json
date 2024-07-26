@@ -1,0 +1,44 @@
+{
+    "ItemAttrDate_Key" : {
+        "metadata": {},
+        "name": "ItemAttrDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrDate_ItemAttr_Key" : {
+        "metadata": {},
+        "name": "ItemAttrDate_ItemAttr_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrDate_Eff_Date" : {
+        "metadata": {},
+        "name": "ItemAttrDate_Eff_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrDate_Specify_Allowed_Values" : {
+        "metadata": {},
+        "name": "ItemAttrDate_Specify_Allowed_Values",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrDate_POS_Translations" : {
+        "metadata": {},
+        "name": "ItemAttrDate_POS_Translations",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrDate_Overall_Default_Value" : {
+        "metadata": {},
+        "name": "ItemAttrDate_Overall_Default_Value",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

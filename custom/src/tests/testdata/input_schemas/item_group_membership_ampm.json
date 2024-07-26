@@ -1,0 +1,38 @@
+{
+    "ItemGrpMemb_Key" : {
+        "metadata": {},
+        "name": "ItemGrpMemb_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpMemb_Item_Key" : {
+        "metadata": {},
+        "name": "ItemGrpMemb_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpMemb_Type" : {
+        "metadata": {},
+        "name": "ItemGrpMemb_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpMemb_Level" : {
+        "metadata": {},
+        "name": "ItemGrpMemb_Level",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpMemb_ItemGrp_Key" : {
+        "metadata": {},
+        "name": "ItemGrpMemb_ItemGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

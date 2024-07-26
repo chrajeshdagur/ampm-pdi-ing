@@ -1,0 +1,38 @@
+{
+    "ItemAttrValGrp_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValGrp_ItemAttrDate_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValGrp_ItemAttrDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValGrp_GroupDefaultValue" : {
+        "metadata": {},
+        "name": "ItemAttrValGrp_GroupDefaultValue",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValGrp_HasItemDetails" : {
+        "metadata": {},
+        "name": "ItemAttrValGrp_HasItemDetails",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValGrp_TaxAuth_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValGrp_TaxAuth_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

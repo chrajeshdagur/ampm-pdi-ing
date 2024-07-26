@@ -1,0 +1,116 @@
+{
+    "Item_Key" : {
+        "metadata": {},
+        "name": "Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Number" : {
+        "metadata": {},
+        "name": "Item_Number",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Description" : {
+        "metadata": {},
+        "name": "Item_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Type" : {
+        "metadata": {},
+        "name": "Item_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Do_Not_Delete" : {
+        "metadata": {},
+        "name": "Item_Do_Not_Delete",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Allow_Mass_Update" : {
+        "metadata": {},
+        "name": "Item_Allow_Mass_Update",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Allow_Mass_Authorization" : {
+        "metadata": {},
+        "name": "Item_Allow_Mass_Authorization",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Allow_Invty_Frac_Units" : {
+        "metadata": {},
+        "name": "Item_Allow_Invty_Frac_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_ItemMfgr_Key" : {
+        "metadata": {},
+        "name": "Item_ItemMfgr_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_ItemBrand_Key" : {
+        "metadata": {},
+        "name": "Item_ItemBrand_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_ItemTaxGrp_Key" : {
+        "metadata": {},
+        "name": "Item_ItemTaxGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Allow_Site_Retails" : {
+        "metadata": {},
+        "name": "Item_Allow_Site_Retails",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Created_DateTime" : {
+        "metadata": {},
+        "name": "Item_Created_DateTime",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_FS_Audit" : {
+        "metadata": {},
+        "name": "Item_FS_Audit",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Inactive_Date" : {
+        "metadata": {},
+        "name": "Item_Inactive_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Is_Perishable" : {
+        "metadata": {},
+        "name": "Item_Is_Perishable",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Track_Nutrition_Facts" : {
+        "metadata": {},
+        "name": "Item_Track_Nutrition_Facts",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Created_In_PBIS" : {
+        "metadata": {},
+        "name": "Item_Created_In_PBIS",
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,5 @@
+GLAcctType_Key,GLAcctType_ID,GLAcctType_Usage,ts
+0,GLAcctTypeAsset,1,0000000000000C1C
+1,GLAcctTypeLiability,1,0000000000000C1D
+2,GLAcctTypeCapital,1,0000000000000C1E
+3,GLAcctTypeIncome,2,0000000000000C1F

@@ -1,0 +1,56 @@
+{
+    "ItemStdInfo_Key" : {
+        "metadata": {},
+        "name": "ItemStdInfo_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_Item_Key" : {
+        "metadata": {},
+        "name": "ItemStdInfo_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_Sale_Activated_Cost" : {
+        "metadata": {},
+        "name": "ItemStdInfo_Sale_Activated_Cost",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_ItemSize_Key" : {
+        "metadata": {},
+        "name": "ItemStdInfo_ItemSize_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_RtlExt_RtlPkg_Key" : {
+        "metadata": {},
+        "name": "ItemStdInfo_RtlExt_RtlPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_Measurement_Type" : {
+        "metadata": {},
+        "name": "ItemStdInfo_Measurement_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_Measurement_Value" : {
+        "metadata": {},
+        "name": "ItemStdInfo_Measurement_Value",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemStdInfo_SellUOM_Key" : {
+        "metadata": {},
+        "name": "ItemStdInfo_SellUOM_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

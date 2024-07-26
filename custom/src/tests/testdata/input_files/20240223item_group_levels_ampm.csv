@@ -1,0 +1,5 @@
+ItemGrpLvl_Key,ItemGrpLvl_Type,ItemGrpLvl_Level,ItemGrpLvl_Description,ItemGrpLvl_ShortDescription,ts
+1,0,1,Department,Dept,0000000000011665
+2,0,2,Category,Cat,0000000000011666
+3,0,3,Sub-Category,SubCat,0000000000011667
+4,1,1,Fee Code Table,Fees,0000000000037ED5

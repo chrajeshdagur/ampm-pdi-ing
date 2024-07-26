@@ -1,0 +1,5 @@
+GLAcctType_Key,GLAcctType_ID,GLAcctType_Usage,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+0,GLAcctTypeAsset,1,0000000000000C1C,20240223gl_account_types_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+1,GLAcctTypeLiability,1,0000000000000C1D,20240223gl_account_types_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+2,GLAcctTypeCapital,1,0000000000000C1E,20240223gl_account_types_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+3,GLAcctTypeIncome,2,0000000000000C1F,20240223gl_account_types_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

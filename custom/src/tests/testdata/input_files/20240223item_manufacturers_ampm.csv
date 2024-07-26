@@ -1,0 +1,5 @@
+ItemMfgr_Key,ItemMfgr_ID,ItemMfgr_Description,ItemMfgr_ItemMfgrType_Key,ItemMfgr_Address_1,ItemMfgr_Address_2,ItemMfgr_Address_3,ItemMfgr_City,ItemMfgr_State_Key,ItemMfgr_Postal_Code,ItemMfgr_Default_Curr_ID,ItemMfgr_Doc_Lang_Key,ts
+1,BLUE RHINO,BLUE RHINO,,,,,,,,,,0000000000028DD6
+2,PEPSI,PEPSI,1,,,,,,,,,0000000000036498
+3,LOTTERY NY,LOTTERY NY,1,,,,,,,,,00000000000412EC
+4,ARIZONA,ARIZONA,1,,,,,,,,,000000000004235D

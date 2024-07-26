@@ -1,0 +1,6 @@
+﻿VendItemAttr_Key,VendItemAttr_VendItem_Key,VendItemAttr_EffDate,VendItemAttr_Reorderable,VendItemAttr_Reclaimable,VendItemAttr_PBManCostItemgrp_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+3,3,6/1/2023 0:00,-1,0,,000000000BD29FE9,20240223vendor_item_attributes_ampm.csv,test_peh,37:37.9,20240223,83844,2024-02-23,AMPM
+4,4,6/1/2023 0:00,-1,0,,000000000BCFB928,20240223vendor_item_attributes_ampm.csv,test_peh,37:37.9,20240223,83844,2024-02-23,AMPM
+5,5,6/1/2023 0:00,-1,0,,0000000000036A27,20240223vendor_item_attributes_ampm.csv,test_peh,37:37.9,20240223,83844,2024-02-23,AMPM
+6,6,6/1/2023 0:00,-1,0,,0000000000036A28,20240223vendor_item_attributes_ampm.csv,test_peh,37:37.9,20240223,83844,2024-02-23,AMPM
+7,7,6/1/2023 0:00,-1,0,,000000000A09869D,20240223vendor_item_attributes_ampm.csv,test_peh,37:37.9,20240223,83844,2024-02-23,AMPM

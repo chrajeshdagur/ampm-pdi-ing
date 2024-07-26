@@ -1,0 +1,86 @@
+{
+    "VendItem_Key" : {
+        "metadata": {},
+        "name": "VendItem_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_EffDate" : {
+        "metadata": {},
+        "name": "VendItem_EffDate",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Vend_Key" : {
+        "metadata": {},
+        "name": "VendItem_Vend_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Number" : {
+        "metadata": {},
+        "name": "VendItem_Number",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Description" : {
+        "metadata": {},
+        "name": "VendItem_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Size_Description" : {
+        "metadata": {},
+        "name": "VendItem_Size_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Item_Key" : {
+        "metadata": {},
+        "name": "VendItem_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_ItemPkg_Key" : {
+        "metadata": {},
+        "name": "VendItem_ItemPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Allow_Partial_Pack" : {
+        "metadata": {},
+        "name": "VendItem_Allow_Partial_Pack",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Discontinue_Date" : {
+        "metadata": {},
+        "name": "VendItem_Discontinue_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Pack_Qty" : {
+        "metadata": {},
+        "name": "VendItem_Pack_Qty",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Repl_VendItem_Key" : {
+        "metadata": {},
+        "name": "VendItem_Repl_VendItem_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendItem_Order_Multiple_Qty" : {
+        "metadata": {},
+        "name": "VendItem_Order_Multiple_Qty",
+        "nullable": true,
+        "type": "string"
+    }
+}

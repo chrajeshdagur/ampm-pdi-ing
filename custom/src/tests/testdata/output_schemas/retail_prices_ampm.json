@@ -1,0 +1,79 @@
+{
+    "Site_ID" : {
+        "metadata": {},
+        "name": "Site_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_External_ID" : {
+        "metadata": {},
+        "name": "Site_External_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Number" : {
+        "metadata": {},
+        "name": "ItemUPC_Number",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Description" : {
+        "metadata": {},
+        "name": "Item_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "RetailPrice" : {
+        "metadata": {},
+        "name": "RetailPrice",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPrc_Eff_Date" : {
+        "metadata": {},
+        "name": "RtlPrc_Eff_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "GrossPrice" : {
+        "metadata": {},
+        "name": "GrossPrice",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

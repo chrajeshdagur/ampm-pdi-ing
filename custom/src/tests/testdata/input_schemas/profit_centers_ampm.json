@@ -1,0 +1,218 @@
+{
+    "ProfCtr_Key" : {
+        "metadata": {},
+        "name": "ProfCtr_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Site_Key" : {
+        "metadata": {},
+        "name": "ProfCtr_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_ProfCtr_Type" : {
+        "metadata": {},
+        "name": "ProfCtr_ProfCtr_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Date" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Date" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Contact_Name" : {
+        "metadata": {},
+        "name": "ProfCtr_Contact_Name",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Phone" : {
+        "metadata": {},
+        "name": "ProfCtr_Phone",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Fax" : {
+        "metadata": {},
+        "name": "ProfCtr_Fax",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Phone_Formatted" : {
+        "metadata": {},
+        "name": "ProfCtr_Phone_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Fax_Formatted" : {
+        "metadata": {},
+        "name": "ProfCtr_Fax_Formatted",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Reference_No" : {
+        "metadata": {},
+        "name": "ProfCtr_Reference_No",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Track_Sales_Using_CP" : {
+        "metadata": {},
+        "name": "ProfCtr_Track_Sales_Using_CP",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_1" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_1",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_2" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_2",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_3" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_3",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_4" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_4",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_5" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_5",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_6" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_6",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_On_7" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_On_7",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_1" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_1",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_2" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_2",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_3" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_3",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_4" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_4",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_5" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_5",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_6" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_6",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Open_Time_7" : {
+        "metadata": {},
+        "name": "ProfCtr_Open_Time_7",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_1" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_1",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_2" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_2",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_3" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_3",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_4" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_4",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_5" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_5",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_6" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_6",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Close_Time_7" : {
+        "metadata": {},
+        "name": "ProfCtr_Close_Time_7",
+        "nullable": true,
+        "type": "string"
+    },
+    "ProfCtr_Notes" : {
+        "metadata": {},
+        "name": "ProfCtr_Notes",
+        "nullable": true,
+        "type": "string"
+    },
+    "Host_Key" : {
+        "metadata": {},
+        "name": "Host_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

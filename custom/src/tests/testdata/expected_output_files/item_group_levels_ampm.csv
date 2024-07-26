@@ -1,0 +1,5 @@
+ItemGrpLvl_Key,ItemGrpLvl_Type,ItemGrpLvl_Level,ItemGrpLvl_Description,ItemGrpLvl_ShortDescription,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+1,0,1,Department,Dept,0000000000011665,20240223item_group_levels_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+2,0,2,Category,Cat,0000000000011666,20240223item_group_levels_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+3,0,3,Sub-Category,SubCat,0000000000011667,20240223item_group_levels_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+4,1,1,Fee Code Table,Fees,0000000000037ED5,20240223item_group_levels_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

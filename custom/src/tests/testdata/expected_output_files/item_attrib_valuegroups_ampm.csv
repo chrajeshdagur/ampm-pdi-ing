@@ -1,0 +1,5 @@
+ItemAttrValGrp_Key,ItemAttrValGrp_ItemAttrDate_Key,ItemAttrValGrp_GroupDefaultValue,ItemAttrValGrp_HasItemDetails,ItemAttrValGrp_TaxAuth_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+17,87,,0,,00000000000408EF,20240223item_attrib_valuegroups_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+18,84,,-1,2,0000000000C5A25E,20240223item_attrib_valuegroups_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+19,84,0,0,3,000000000014B00F,20240223item_attrib_valuegroups_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+20,84,,-1,4,000000000014B010,20240223item_attrib_valuegroups_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

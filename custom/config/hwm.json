@@ -1,0 +1,161 @@
+{
+    "common": {
+        "version": "1.0.0",
+        "debug": true,
+        "test": false,
+        "glue_execution_class": "FLEX"
+    },
+    "sources": {
+        "raw": {
+            "active": true,
+            "source_system": "PDI",
+            "country_code": "US",
+            "pattern": "(\\d{8})AMPMPDI_FULL.zip",
+            "database": "thorntons_fna",
+            "table": "thorntonsposdata",
+            "datahub_ds": "20240718",
+            "datahub_ts": "083111",
+            "max_days": "7",
+            "max_objects": "5000",
+            "delimiters": ",",
+            "file_format": "csv"
+        }
+    },
+    "targets": {
+        "GL_Accounts_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "gl_accounts_ampm",
+            "object_per_partition": "1"
+        },
+        "GL_Account_Majors_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "gl_account_majors_ampm",
+            "object_per_partition": "1"
+        },
+        "GL_Account_Types_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "gl_account_types_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Brands_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_brands_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Attributes_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_attributes_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Attribute_Dates_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_attribute_dates_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Attrib_ValueItemDetails_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_attrib_valueitemdetails_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Attrib_ValueGroups_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_attrib_valuegroups_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Group_Levels_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_group_levels_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Group_Membership_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_group_membership_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Groups_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_groups_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Manufacturers_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_manufacturers_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Packages_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_packages_ampm",
+            "object_per_partition": "1"
+        },
+        "item_sizes_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_sizes_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_Standard_Info_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_standard_info_ampm",
+            "object_per_partition": "1"
+        },
+        "Item_UPCs_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "item_upcs_ampm",
+            "object_per_partition": "1"
+        },
+        "items_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "items_ampm",
+            "object_per_partition": "1"
+        },
+        "Profit_Centers_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "profit_centers_ampm",
+            "object_per_partition": "1"
+        },
+        "Retail_Packages_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "retail_packages_ampm",
+            "object_per_partition": "1"
+        },
+        "Retail_Prices_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "retail_prices_ampm",
+            "object_per_partition": "1"
+        },
+        "Sites_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "sites_ampm",
+            "object_per_partition": "1"
+        },
+        "Vendor_CostZoneSites_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "vendor_costzonesites_ampm",
+            "object_per_partition": "1"
+        },
+        "Paperwork_Batches_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "paperwork_batches_ampm",
+            "object_per_partition": "1"
+        },
+        "Vendor_Costs_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "vendor_costs_ampm",
+            "object_per_partition": "1"
+        },
+        "Vendor_Item_Attributes_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "vendor_item_attributes_ampm",
+            "object_per_partition": "1"
+        },
+        "vendor_items_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "vendor_items_ampm",
+            "object_per_partition": "1"
+        },
+        "Vendors_AMPM": {
+            "database": "transform_main_mobconv_pdi",
+            "table": "vendors_ampm",
+            "object_per_partition": "1"
+        }
+    }
+}

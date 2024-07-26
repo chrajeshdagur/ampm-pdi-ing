@@ -1,0 +1,5 @@
+ItemMfgr_Key,ItemMfgr_ID,ItemMfgr_Description,ItemMfgr_ItemMfgrType_Key,ItemMfgr_Address_1,ItemMfgr_Address_2,ItemMfgr_Address_3,ItemMfgr_City,ItemMfgr_State_Key,ItemMfgr_Postal_Code,ItemMfgr_Default_Curr_ID,ItemMfgr_Doc_Lang_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+1,BLUE RHINO,BLUE RHINO,,,,,,,,,,0000000000028DD6,20240223item_manufacturers_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+2,PEPSI,PEPSI,1,,,,,,,,,0000000000036498,20240223item_manufacturers_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+3,LOTTERY NY,LOTTERY NY,1,,,,,,,,,00000000000412EC,20240223item_manufacturers_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+4,ARIZONA,ARIZONA,1,,,,,,,,,000000000004235D,20240223item_manufacturers_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

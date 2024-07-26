@@ -1,0 +1,271 @@
+{
+    "PaperworkBatch_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_PaperworkVer_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_PaperworkVer_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Site_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_BusDate" : {
+        "metadata": {},
+        "name": "PaperworkBatch_BusDate",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Submit_Status" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Submit_Status",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Errors" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Errors",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Warnings" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Warnings",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_User_Type" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_User_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_User" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_User",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_User_GUID" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_User_GUID",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_DateTime" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_DateTime",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Update_Type" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Update_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Update_GUID" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Update_GUID",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Update_DateTime" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Update_DateTime",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Invty_Type" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Invty_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Invty_GUID" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Invty_GUID",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Locked_For_Invty_DateTime" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Locked_For_Invty_DateTime",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Inventory_Posted" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Inventory_Posted",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Posting_Forms" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Posting_Forms",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_HasBeen_Submitted" : {
+        "metadata": {},
+        "name": "PaperworkBatch_HasBeen_Submitted",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_SiteInvProfDate_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_SiteInvProfDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_SiteOpItemLstDate_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_SiteOpItemLstDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_BusEnt_ID" : {
+        "metadata": {},
+        "name": "PaperworkBatch_BusEnt_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_SiteDRGen_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_SiteDRGen_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_TraitAssignment_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_TraitAssignment_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_SiteDRLkpDate_Key" : {
+        "metadata": {},
+        "name": "PaperworkBatch_SiteDRLkpDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Needs_Recalc" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Needs_Recalc",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Reprocess_UPCs" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Reprocess_UPCs",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_Datetime" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_Datetime",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_IN_Base" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_IN_Base",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_IN_DelNote_Rec" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_IN_DelNote_Rec",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_IN_PriceChanges" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_IN_PriceChanges",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_IN_OwnByDept" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_IN_OwnByDept",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_GL_Base" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_GL_Base",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_GL_AP" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_GL_AP",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_GL_CM" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_GL_CM",
+        "nullable": true,
+        "type": "string"
+    },
+    "Paperworkbatch_Post_GL_IR" : {
+        "metadata": {},
+        "name": "Paperworkbatch_Post_GL_IR",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "PaperworkBatch_Contains_Fuel_Sticks" : {
+        "metadata": {},
+        "name": "PaperworkBatch_Contains_Fuel_Sticks",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

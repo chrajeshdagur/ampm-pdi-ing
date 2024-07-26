@@ -1,0 +1,7 @@
+type: genericSDLFPipelines
+lineage:
+  - process_name: GlueTransform
+    input_data_sets:
+      - thorntons_fna.thorntonsposdata
+    ouput_data_sets:
+      - transform_main_mobconv_pdi.gl_accounts_ampm

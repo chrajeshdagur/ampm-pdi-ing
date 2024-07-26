@@ -1,0 +1,20 @@
+{
+    "ItemSize_Key" : {
+        "metadata": {},
+        "name": "ItemSize_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemSize_Description" : {
+        "metadata": {},
+        "name": "ItemSize_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

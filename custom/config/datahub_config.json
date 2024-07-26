@@ -1,0 +1,6868 @@
+{
+  "name": "mobconv-ampm-pdi-ingestion",
+  "version": "1.0.0",
+  "sources": {
+    "raw": {
+      "GL_Accounts_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "gl_accounts_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "GLAcct_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_BusEnt_Acct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_Site_Acct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_PCtr_Acct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_Disabled",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_Disable_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcct_Disable_User",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "GL_Account_Majors_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "gl_account_majors_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Major_Acct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Sub_Acct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_GLAcctType_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_StmtCat_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_GLStmtGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Restricted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Post_Detail",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Disabled",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Disable_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Disable_User",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Post_By_Site",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Include_In_Revalue",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Has_Activity",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_Allow_Owning_Entity",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_TrackAssetIDs",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctMaj_AssetIDsRequired",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "GL_Account_Types_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "gl_account_types_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "GLAcctType_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctType_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GLAcctType_Usage",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Brands_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_brands_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemBrand_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemBrand_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemBrand_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemBrand_ItemBrandType_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Attributes_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_attributes_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemAttr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Is_Standard",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Used_For_Pricing",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Precedence",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_SetValues_Method",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Format",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Length",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Decimals",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttr_Security_Group",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Attribute_Dates_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_attribute_dates_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_ItemAttr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_Eff_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_Specify_Allowed_Values",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_POS_Translations",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrDate_Overall_Default_Value",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Attrib_ValueItemDetails_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_attrib_valueitemdetails_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_ItemAttrDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_ItemAttrValGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_ItemGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_ItemTaxGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_Value",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValItemDtl_RtlPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Attrib_ValueGroups_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_attrib_valuegroups_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemAttrValGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValGrp_ItemAttrDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValGrp_GroupDefaultValue",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValGrp_HasItemDetails",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemAttrValGrp_TaxAuth_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Group_Levels_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_group_levels_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemGrpLvl_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpLvl_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpLvl_Level",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpLvl_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpLvl_ShortDescription",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Group_Membership_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_group_membership_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemGrpMemb_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpMemb_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpMemb_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpMemb_Level",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrpMemb_ItemGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Groups_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_groups_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ItemGrpLvl_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Parent_ItemGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Accrue_Sales_Tax",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Last_Item_No_Gen",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_External_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Do_Not_Use_Sizes",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Expense",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Use_Weight_Volume_For_Items",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_StoreUse_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_BadMerch_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Waste_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Spoilage_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_QtyDisc_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Promo_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_InvAdj_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_AuditAdj_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_RebateCost_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_COS_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_PurchXferCost_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_PurchXferRtl_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_RtlPriceChg_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_EndingInvCost_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_EndingInvRtl_DataID_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Allowed_RtlAdj_Types",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Allowed_CstAdj_Types",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Allowed_ItmAdj_Types",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Process_Inv_Upd_Alerts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Alert_MailGroup_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Alert_End_Inv_Neg",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Alert_Cost_GT_Rtl",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Target_Rtl_Margin_Pct",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Target_Rtl_Margin_Var",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Audit_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Invty_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_COS_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_AudAdj_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_InvtyAdj_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Promo_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_QtyDisc_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_StoreUse_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_BadMerch_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Waste_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Spoil_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_UserDef1_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_UserDef2_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_UserDef3_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ProfCtr_Type_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Expense_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ItemTaxGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_RollupPrcChgAdj",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ExcludeFromPrcChgAdj",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Item_Invty_Grp_Dtl_GL_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Alert_Invalid_WAC",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Alert_Neg_WAC",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Suppress_Alert_End_Inv_Neg_OII",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_InvRecon_GLAcctMaj_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_TransferExclude",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Retail",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Cost",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_Item",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ExclCostQtyExceptions",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemGrp_ProdTaxGrp_Key",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Manufacturers_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_manufacturers_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_ItemMfgrType_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Address_1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Address_2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Address_3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_City",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_State_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Postal_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Default_Curr_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemMfgr_Doc_Lang_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Packages_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_packages_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_RtlPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Purch",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Sell",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Audit",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Label",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Discontinue_Sale_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Discontinue_Purch_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Width",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Height",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Depth",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Ship_Weight",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Ship_Weight_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_IsIngredient",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_Ingr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemPkg_VATCategory_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "item_sizes_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_sizes_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemSize_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemSize_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_Standard_Info_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_standard_info_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_Sale_Activated_Cost",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_ItemSize_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_RtlExt_RtlPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_Measurement_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_Measurement_Value",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemStdInfo_SellUOM_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Item_UPCs_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "item_upcs_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ItemUPC_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_ItemPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Number",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Scan_Modifier",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_UltraLong_Desc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Long_Desc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Short_Desc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_UltraShort_Desc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Discontinue_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Sell_UOM_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_DescriptionRequireApproval",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "items_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "items_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Number",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Do_Not_Delete",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Allow_Mass_Update",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Allow_Mass_Authorization",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Allow_Invty_Frac_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_ItemMfgr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_ItemBrand_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_ItemTaxGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Allow_Site_Retails",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Created_DateTime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_FS_Audit",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Inactive_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Is_Perishable",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Track_Nutrition_Facts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Created_In_PBIS",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Profit_Centers_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "profit_centers_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "ProfCtr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_ProfCtr_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Contact_Name",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Fax",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Phone_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Fax_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Reference_No",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Track_Sales_Using_CP",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_4",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_5",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_6",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_On_7",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_4",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_5",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_6",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Open_Time_7",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_4",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_5",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_6",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Close_Time_7",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ProfCtr_Notes",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Host_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Retail_Packages_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "retail_packages_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "RtlPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_RtlPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_Quantity",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_Disabled",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_Item_Quantity",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_IsInvtyValPkg",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPkg_IsNotForFranchiseeUse",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Retail_Prices_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "retail_prices_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "Site_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_External_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ItemUPC_Number",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Item_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RetailPrice",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "RtlPrc_Eff_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "GrossPrice",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Sites_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "sites_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Address1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Address2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Address3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_City",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_State",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Zip",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Alt_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Fax",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Modem",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Phone_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Alt_Phone_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Fax_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Modem_Formatted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Contact",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Email_Name",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Email_Address",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_External_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Template",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Uses_InSite",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Uses_PD",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Uses_VU",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Receives_Downloads",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Org_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DelRte_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DelRte_Stop",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_SPLC_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_SIC_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Fuel_COGS_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Used_For_Drop_Ships",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Deliv_Directions",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Def_Fuel_Origin_By",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Fuel_Vend_Auths",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_TrmnlGrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DropShip_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Pass_On_Min_Freight_Chgs",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Override_Min_Load",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Override_Min_Load_Amt",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DispArea_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Is_Terminal",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_County",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Tax_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Linked_RMS",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Exported_FocalPoint",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_TaxSchedCat_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Host_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Invty_COGS_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_Stl_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_StlAccr_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_Comm_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_CommAccr_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_FuelOrdRule_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Allow_Delivs_After_Hours",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Is_MasterSite",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_MasterSite_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_FPZone_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_TrmnlCtlNo_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Deliv_TankRd_Method",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_GPS_Longitude",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_GPS_Latitude",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Competitor_Radius",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Competitor_Fuel_Pricing_Alert_Trait_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_GL_Status",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Def_Warehouse_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Incl_In_WhPrcNtc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Is_BOLSite",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Is_Trmnl_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_Royalty_Stl_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Last_Royalty_StlAccr_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_WI_Third_Party_Owned",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_WI_Cust_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_WI_Vend_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_WI_CustLoc_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_TimeZone_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Allow_Neg_Bulk_Fuel_Invty",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DEP_Dest_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_DestTaxType_TaxSchedCat_key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Is_ExxonMobil_Distributor",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Distributor_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Override_Transfer_Pricing",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Use_Xfer_Price_Rules_On_Site_Orders",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Unit_Basis_For_Site_Orders",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Transfer_Pricing_Date_Override",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Site_Transfer_Pricing_Freight_Date_Override",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Vendor_CostZoneSites_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "vendor_costzonesites_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "VendCZSites_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCZSites_VendAuth_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCZSites_VendCostZone_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCZSites_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Paperwork_Batches_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "paperwork_batches_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_PaperworkVer_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_BusDate",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Submit_Status",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Errors",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Warnings",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_User_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_User",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_User_GUID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_DateTime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Update_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Update_GUID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Update_DateTime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Invty_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Invty_GUID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Locked_For_Invty_DateTime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Inventory_Posted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Posting_Forms",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_HasBeen_Submitted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_SiteInvProfDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_SiteOpItemLstDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_BusEnt_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_SiteDRGen_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_TraitAssignment_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_SiteDRLkpDate_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Needs_Recalc",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Reprocess_UPCs",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_Datetime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_IN_Base",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_IN_DelNote_Rec",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_IN_PriceChanges",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_IN_OwnByDept",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_GL_Base",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_GL_AP",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_GL_CM",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Paperworkbatch_Post_GL_IR",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "PaperworkBatch_Contains_Fuel_Sticks",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Vendor_Costs_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "vendor_costs_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "VendCost_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_VendItem_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_EffDate",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Is_Promo",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Promo_End_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Pack_Cost",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_VendCostZone_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Site_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendCost_Discontinue",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Vendor_Item_Attributes_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "vendor_item_attributes_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "VendItemAttr_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItemAttr_VendItem_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItemAttr_EffDate",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItemAttr_Reorderable",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItemAttr_Reclaimable",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItemAttr_PBManCostItemgrp_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "vendor_items_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "vendor_items_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "VendItem_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_EffDate",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Vend_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Number",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Size_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Item_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_ItemPkg_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Allow_Partial_Pack",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Discontinue_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Pack_Qty",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Repl_VendItem_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "VendItem_Order_Multiple_Qty",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      },
+      "Vendors_AMPM": {
+        "database": "transform_main_mobconv_pdi",
+        "table": "vendors_ampm",
+        "schema": {
+          "fields": [
+            {
+              "metadata": {},
+              "name": "Vend_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Tax_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Tax_ID_Type",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Tax_ID_Is_Encrypted",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Tax_ID_Masked",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_TIN_Status",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_DUNS_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_SCAC_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Alt_Description",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Address_1",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Address_2",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Address_3",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_City",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_State_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Postal_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Alt_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_FAX",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Masked_FAX",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Masked_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Masked_Alt_Phone",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Contact_Name",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Email_Address",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_On_Hold",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Class",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_VendType_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Internal_Vendor",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Export_Vendor_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Use_Default_Terms",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Default_APTerms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_APTerms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Invc_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Invc_Has_Frt",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Invc_Has_DefTax",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Cost_Begin_Time",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Cost_Life_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Cost_Lifetime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_InterComp_Invc_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Generate_Frt_Invoices",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenFrt_Invc_Method",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenFrt_Terms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenFrt_Invc_Remit",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenFrt_Remit_Export_File",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenFrt_Remit_File_Path",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_SPLC_Code",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_OD_Vehicle_Required",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_OD_Driver_Required",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_OD_Time_Required",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_OD_Odometer_Required",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Recon_Zero_Frt",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_County",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Default_Curr_ID",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Allow_At_Site",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Deactivated",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Deactivated_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_OneTime",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Recon_Before_Billing",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Dispatch_Instructions",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Precision",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_BOL_Confirmation_Required",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_BOL_Confirmation_Units",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Use_BOL_LiftDate",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_All_Sites",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Exp_Fuel_Orders",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Exp_FuelOrd_Format",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Exp_FuelOrd_Path",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Created_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Mixed_Load_Min_Vol_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Mixed_Split_Load_Purchase_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Mixed_Split_Load_Sale_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Mixed_Load_Min_Rate_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Supplies_WI_Prods",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_TransportMode_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Credit_Invoice_Due_Date_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_BusCal_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_BOLs_Invc_By_Prod_Tax_Group",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Doc_Language_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_TaxAuth_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_TaxTypeCode_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_TaxTypeSubCatCode_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_FuelInv_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_FrtInv_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_TaxInv_Date",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_Days_Before",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_Days_After",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Rnd_SurChg_Frt_Precision",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Rnd_SurChg_Frt",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Credit_Invoice_Due_Date_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Calc_WI_Prch_Taxes",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_Export_POs",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_PO_Export_Format",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_PO_Export_FilePath",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_PO_Export_File_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_PO_Export_AccountNo",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_WI_PO_Export_Whrs_TransTable_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_National_Account",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Default_Buyback_RefNo",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Approval_Req",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Inv_Variance",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Default_APTerms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Recon_Before_Billing",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_RequireVehicleDriverOption",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_AutoGen_DeferTax_Invoice",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_DeferTax_Pmt_Terms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_GenWhsle_AR_Invoice",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_DeferTax_AR_Pmt_Terms_Key",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Hazmat_No",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Itemize_Per_Load_Freight",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Use_Vehicle_Profit_Site_Custs",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Use_Vehicle_Profit_Site_Sites",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Match_FuelInv_Site",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Freight_InvoicedByLoad",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Export",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Expt_Format",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Expt_FilePath",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Buyback_Expt_File_Option",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "ts",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Fuel_Cost_Negative_Allowed",
+              "nullable": true,
+              "type": "string"
+            },
+            {
+              "metadata": {},
+              "name": "Vend_Use_Vehicle_Profit_Site_Purchases",
+              "nullable": true,
+              "type": "string"
+            }
+          ],
+          "type": "struct"
+        }
+      }
+    }
+  },
+  "targets": {
+    "GL_Accounts_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "gl_accounts_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "GLAcct_Key",
+          "string"
+        ],
+        [
+          "GLAcct_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "GLAcct_BusEnt_Acct",
+          "string"
+        ],
+        [
+          "GLAcct_Site_Acct",
+          "string"
+        ],
+        [
+          "GLAcct_PCtr_Acct",
+          "string"
+        ],
+        [
+          "GLAcct_Disabled",
+          "string"
+        ],
+        [
+          "GLAcct_Disable_Date",
+          "string"
+        ],
+        [
+          "GLAcct_Disable_User",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "GL_Account_Majors_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "gl_account_majors_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Description",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Major_Acct",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Sub_Acct",
+          "string"
+        ],
+        [
+          "GLAcctMaj_GLAcctType_Key",
+          "string"
+        ],
+        [
+          "GLAcctMaj_StmtCat_Key",
+          "string"
+        ],
+        [
+          "GLAcctMaj_GLStmtGrp_Key",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Restricted",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Post_Detail",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Disabled",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Disable_Date",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Disable_User",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Post_By_Site",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Include_In_Revalue",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Has_Activity",
+          "string"
+        ],
+        [
+          "GLAcctMaj_Allow_Owning_Entity",
+          "string"
+        ],
+        [
+          "GLAcctMaj_TrackAssetIDs",
+          "string"
+        ],
+        [
+          "GLAcctMaj_AssetIDsRequired",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "GL_Account_Types_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "gl_account_types_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "GLAcctType_Key",
+          "string"
+        ],
+        [
+          "GLAcctType_ID",
+          "string"
+        ],
+        [
+          "GLAcctType_Usage",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Brands_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_brands_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemBrand_Key",
+          "string"
+        ],
+        [
+          "ItemBrand_ID",
+          "string"
+        ],
+        [
+          "ItemBrand_Description",
+          "string"
+        ],
+        [
+          "ItemBrand_ItemBrandType_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Attributes_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_attributes_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemAttr_Key",
+          "string"
+        ],
+        [
+          "ItemAttr_Code",
+          "string"
+        ],
+        [
+          "ItemAttr_Is_Standard",
+          "string"
+        ],
+        [
+          "ItemAttr_Used_For_Pricing",
+          "string"
+        ],
+        [
+          "ItemAttr_Precedence",
+          "string"
+        ],
+        [
+          "ItemAttr_SetValues_Method",
+          "string"
+        ],
+        [
+          "ItemAttr_Format",
+          "string"
+        ],
+        [
+          "ItemAttr_Length",
+          "string"
+        ],
+        [
+          "ItemAttr_Decimals",
+          "string"
+        ],
+        [
+          "ItemAttr_Security_Group",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Attribute_Dates_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_attribute_dates_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemAttrDate_Key",
+          "string"
+        ],
+        [
+          "ItemAttrDate_ItemAttr_Key",
+          "string"
+        ],
+        [
+          "ItemAttrDate_Eff_Date",
+          "string"
+        ],
+        [
+          "ItemAttrDate_Specify_Allowed_Values",
+          "string"
+        ],
+        [
+          "ItemAttrDate_POS_Translations",
+          "string"
+        ],
+        [
+          "ItemAttrDate_Overall_Default_Value",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Attrib_ValueItemDetails_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_attrib_valueitemdetails_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemAttrValItemDtl_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_ItemAttrDate_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_Type",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_ItemAttrValGrp_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_ItemGrp_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_Item_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_ItemTaxGrp_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_Value",
+          "string"
+        ],
+        [
+          "ItemAttrValItemDtl_RtlPkg_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Attrib_ValueGroups_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_attrib_valuegroups_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemAttrValGrp_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValGrp_ItemAttrDate_Key",
+          "string"
+        ],
+        [
+          "ItemAttrValGrp_GroupDefaultValue",
+          "string"
+        ],
+        [
+          "ItemAttrValGrp_HasItemDetails",
+          "string"
+        ],
+        [
+          "ItemAttrValGrp_TaxAuth_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Group_Levels_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_group_levels_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemGrpLvl_Key",
+          "string"
+        ],
+        [
+          "ItemGrpLvl_Type",
+          "string"
+        ],
+        [
+          "ItemGrpLvl_Level",
+          "string"
+        ],
+        [
+          "ItemGrpLvl_Description",
+          "string"
+        ],
+        [
+          "ItemGrpLvl_ShortDescription",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Group_Membership_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_group_membership_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemGrpMemb_Key",
+          "string"
+        ],
+        [
+          "ItemGrpMemb_Item_Key",
+          "string"
+        ],
+        [
+          "ItemGrpMemb_Type",
+          "string"
+        ],
+        [
+          "ItemGrpMemb_Level",
+          "string"
+        ],
+        [
+          "ItemGrpMemb_ItemGrp_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Groups_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_groups_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemGrp_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_ItemGrpLvl_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Parent_ItemGrp_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_ID",
+          "string"
+        ],
+        [
+          "ItemGrp_Description",
+          "string"
+        ],
+        [
+          "ItemGrp_Accrue_Sales_Tax",
+          "string"
+        ],
+        [
+          "ItemGrp_Last_Item_No_Gen",
+          "string"
+        ],
+        [
+          "ItemGrp_External_ID",
+          "string"
+        ],
+        [
+          "ItemGrp_Do_Not_Use_Sizes",
+          "string"
+        ],
+        [
+          "ItemGrp_Expense",
+          "string"
+        ],
+        [
+          "ItemGrp_Use_Weight_Volume_For_Items",
+          "string"
+        ],
+        [
+          "ItemGrp_StoreUse_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_BadMerch_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Waste_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Spoilage_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_QtyDisc_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Promo_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_InvAdj_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_AuditAdj_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_RebateCost_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_COS_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_PurchXferCost_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_PurchXferRtl_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_RtlPriceChg_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_EndingInvCost_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_EndingInvRtl_DataID_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Allowed_RtlAdj_Types",
+          "string"
+        ],
+        [
+          "ItemGrp_Allowed_CstAdj_Types",
+          "string"
+        ],
+        [
+          "ItemGrp_Allowed_ItmAdj_Types",
+          "string"
+        ],
+        [
+          "ItemGrp_Process_Inv_Upd_Alerts",
+          "string"
+        ],
+        [
+          "ItemGrp_Alert_MailGroup_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Alert_End_Inv_Neg",
+          "string"
+        ],
+        [
+          "ItemGrp_Alert_Cost_GT_Rtl",
+          "string"
+        ],
+        [
+          "ItemGrp_Target_Rtl_Margin_Pct",
+          "string"
+        ],
+        [
+          "ItemGrp_Target_Rtl_Margin_Var",
+          "string"
+        ],
+        [
+          "ItemGrp_Audit_Type",
+          "string"
+        ],
+        [
+          "ItemGrp_Invty_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_COS_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_AudAdj_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_InvtyAdj_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Promo_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_QtyDisc_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_StoreUse_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_BadMerch_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Waste_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_Spoil_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_UserDef1_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_UserDef2_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_UserDef3_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_ProfCtr_Type_Code",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "ItemGrp_Expense_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_ItemTaxGrp_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_RollupPrcChgAdj",
+          "string"
+        ],
+        [
+          "ItemGrp_ExcludeFromPrcChgAdj",
+          "string"
+        ],
+        [
+          "ItemGrp_Item_Invty_Grp_Dtl_GL_Option",
+          "string"
+        ],
+        [
+          "ItemGrp_Alert_Invalid_WAC",
+          "string"
+        ],
+        [
+          "ItemGrp_Alert_Neg_WAC",
+          "string"
+        ],
+        [
+          "ItemGrp_Suppress_Alert_End_Inv_Neg_OII",
+          "string"
+        ],
+        [
+          "ItemGrp_InvRecon_GLAcctMaj_Key",
+          "string"
+        ],
+        [
+          "ItemGrp_TransferExclude",
+          "string"
+        ],
+        [
+          "ItemGrp_Retail",
+          "string"
+        ],
+        [
+          "ItemGrp_Cost",
+          "string"
+        ],
+        [
+          "ItemGrp_Item",
+          "string"
+        ],
+        [
+          "ItemGrp_ExclCostQtyExceptions",
+          "string"
+        ],
+        [
+          "ItemGrp_ProdTaxGrp_Key",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Manufacturers_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_manufacturers_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemMfgr_Key",
+          "string"
+        ],
+        [
+          "ItemMfgr_ID",
+          "string"
+        ],
+        [
+          "ItemMfgr_Description",
+          "string"
+        ],
+        [
+          "ItemMfgr_ItemMfgrType_Key",
+          "string"
+        ],
+        [
+          "ItemMfgr_Address_1",
+          "string"
+        ],
+        [
+          "ItemMfgr_Address_2",
+          "string"
+        ],
+        [
+          "ItemMfgr_Address_3",
+          "string"
+        ],
+        [
+          "ItemMfgr_City",
+          "string"
+        ],
+        [
+          "ItemMfgr_State_Key",
+          "string"
+        ],
+        [
+          "ItemMfgr_Postal_Code",
+          "string"
+        ],
+        [
+          "ItemMfgr_Default_Curr_ID",
+          "string"
+        ],
+        [
+          "ItemMfgr_Doc_Lang_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Packages_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_packages_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemPkg_Key",
+          "string"
+        ],
+        [
+          "ItemPkg_Item_Key",
+          "string"
+        ],
+        [
+          "ItemPkg_RtlPkg_Key",
+          "string"
+        ],
+        [
+          "ItemPkg_Purch",
+          "string"
+        ],
+        [
+          "ItemPkg_Sell",
+          "string"
+        ],
+        [
+          "ItemPkg_Audit",
+          "string"
+        ],
+        [
+          "ItemPkg_Label",
+          "string"
+        ],
+        [
+          "ItemPkg_Discontinue_Sale_Date",
+          "string"
+        ],
+        [
+          "ItemPkg_Discontinue_Purch_Date",
+          "string"
+        ],
+        [
+          "ItemPkg_Width",
+          "string"
+        ],
+        [
+          "ItemPkg_Height",
+          "string"
+        ],
+        [
+          "ItemPkg_Depth",
+          "string"
+        ],
+        [
+          "ItemPkg_Ship_Weight",
+          "string"
+        ],
+        [
+          "ItemPkg_Ship_Weight_Units",
+          "string"
+        ],
+        [
+          "ItemPkg_IsIngredient",
+          "string"
+        ],
+        [
+          "ItemPkg_Ingr_Key",
+          "string"
+        ],
+        [
+          "ItemPkg_VATCategory_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "item_sizes_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_sizes_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemSize_Key",
+          "string"
+        ],
+        [
+          "ItemSize_Description",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_Standard_Info_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_standard_info_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemStdInfo_Key",
+          "string"
+        ],
+        [
+          "ItemStdInfo_Item_Key",
+          "string"
+        ],
+        [
+          "ItemStdInfo_Sale_Activated_Cost",
+          "string"
+        ],
+        [
+          "ItemStdInfo_ItemSize_Key",
+          "string"
+        ],
+        [
+          "ItemStdInfo_RtlExt_RtlPkg_Key",
+          "string"
+        ],
+        [
+          "ItemStdInfo_Measurement_Type",
+          "string"
+        ],
+        [
+          "ItemStdInfo_Measurement_Value",
+          "string"
+        ],
+        [
+          "ItemStdInfo_SellUOM_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Item_UPCs_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "item_upcs_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ItemUPC_Key",
+          "string"
+        ],
+        [
+          "ItemUPC_ItemPkg_Key",
+          "string"
+        ],
+        [
+          "ItemUPC_Item_Key",
+          "string"
+        ],
+        [
+          "ItemUPC_Number",
+          "string"
+        ],
+        [
+          "ItemUPC_Scan_Modifier",
+          "string"
+        ],
+        [
+          "ItemUPC_UltraLong_Desc",
+          "string"
+        ],
+        [
+          "ItemUPC_Long_Desc",
+          "string"
+        ],
+        [
+          "ItemUPC_Short_Desc",
+          "string"
+        ],
+        [
+          "ItemUPC_UltraShort_Desc",
+          "string"
+        ],
+        [
+          "ItemUPC_Discontinue_Date",
+          "string"
+        ],
+        [
+          "ItemUPC_Sell_UOM_Units",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "ItemUPC_DescriptionRequireApproval",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "items_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "items_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "Item_Key",
+          "string"
+        ],
+        [
+          "Item_Number",
+          "string"
+        ],
+        [
+          "Item_Description",
+          "string"
+        ],
+        [
+          "Item_Type",
+          "string"
+        ],
+        [
+          "Item_Do_Not_Delete",
+          "string"
+        ],
+        [
+          "Item_Allow_Mass_Update",
+          "string"
+        ],
+        [
+          "Item_Allow_Mass_Authorization",
+          "string"
+        ],
+        [
+          "Item_Allow_Invty_Frac_Units",
+          "string"
+        ],
+        [
+          "Item_ItemMfgr_Key",
+          "string"
+        ],
+        [
+          "Item_ItemBrand_Key",
+          "string"
+        ],
+        [
+          "Item_ItemTaxGrp_Key",
+          "string"
+        ],
+        [
+          "Item_Allow_Site_Retails",
+          "string"
+        ],
+        [
+          "Item_Created_DateTime",
+          "string"
+        ],
+        [
+          "Item_FS_Audit",
+          "string"
+        ],
+        [
+          "Item_Inactive_Date",
+          "string"
+        ],
+        [
+          "Item_Is_Perishable",
+          "string"
+        ],
+        [
+          "Item_Track_Nutrition_Facts",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "Item_Created_In_PBIS",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Profit_Centers_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "profit_centers_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "ProfCtr_Key",
+          "string"
+        ],
+        [
+          "ProfCtr_Site_Key",
+          "string"
+        ],
+        [
+          "ProfCtr_ProfCtr_Type",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Date",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Date",
+          "string"
+        ],
+        [
+          "ProfCtr_Contact_Name",
+          "string"
+        ],
+        [
+          "ProfCtr_Phone",
+          "string"
+        ],
+        [
+          "ProfCtr_Fax",
+          "string"
+        ],
+        [
+          "ProfCtr_Phone_Formatted",
+          "string"
+        ],
+        [
+          "ProfCtr_Fax_Formatted",
+          "string"
+        ],
+        [
+          "ProfCtr_Reference_No",
+          "string"
+        ],
+        [
+          "ProfCtr_Track_Sales_Using_CP",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_1",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_2",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_3",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_4",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_5",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_6",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_On_7",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_1",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_2",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_3",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_4",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_5",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_6",
+          "string"
+        ],
+        [
+          "ProfCtr_Open_Time_7",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_1",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_2",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_3",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_4",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_5",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_6",
+          "string"
+        ],
+        [
+          "ProfCtr_Close_Time_7",
+          "string"
+        ],
+        [
+          "ProfCtr_Notes",
+          "string"
+        ],
+        [
+          "Host_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Retail_Packages_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "retail_packages_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "RtlPkg_Key",
+          "string"
+        ],
+        [
+          "RtlPkg_Code",
+          "string"
+        ],
+        [
+          "RtlPkg_Type",
+          "string"
+        ],
+        [
+          "RtlPkg_RtlPkg_Key",
+          "string"
+        ],
+        [
+          "RtlPkg_Quantity",
+          "string"
+        ],
+        [
+          "RtlPkg_Disabled",
+          "string"
+        ],
+        [
+          "RtlPkg_Item_Quantity",
+          "string"
+        ],
+        [
+          "RtlPkg_IsInvtyValPkg",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "RtlPkg_IsNotForFranchiseeUse",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Retail_Prices_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "retail_prices_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "Site_ID",
+          "string"
+        ],
+        [
+          "Site_External_ID",
+          "string"
+        ],
+        [
+          "ItemUPC_Number",
+          "string"
+        ],
+        [
+          "Item_Description",
+          "string"
+        ],
+        [
+          "RetailPrice",
+          "string"
+        ],
+        [
+          "RtlPrc_Eff_Date",
+          "string"
+        ],
+        [
+          "GrossPrice",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Sites_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "sites_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "Site_Key",
+          "string"
+        ],
+        [
+          "Site_ID",
+          "string"
+        ],
+        [
+          "Site_Description",
+          "string"
+        ],
+        [
+          "Site_Address1",
+          "string"
+        ],
+        [
+          "Site_Address2",
+          "string"
+        ],
+        [
+          "Site_Address3",
+          "string"
+        ],
+        [
+          "Site_City",
+          "string"
+        ],
+        [
+          "Site_State",
+          "string"
+        ],
+        [
+          "Site_Zip",
+          "string"
+        ],
+        [
+          "Site_Phone",
+          "string"
+        ],
+        [
+          "Site_Alt_Phone",
+          "string"
+        ],
+        [
+          "Site_Fax",
+          "string"
+        ],
+        [
+          "Site_Modem",
+          "string"
+        ],
+        [
+          "Site_Phone_Formatted",
+          "string"
+        ],
+        [
+          "Site_Alt_Phone_Formatted",
+          "string"
+        ],
+        [
+          "Site_Fax_Formatted",
+          "string"
+        ],
+        [
+          "Site_Modem_Formatted",
+          "string"
+        ],
+        [
+          "Site_Contact",
+          "string"
+        ],
+        [
+          "Site_Email_Name",
+          "string"
+        ],
+        [
+          "Site_Email_Address",
+          "string"
+        ],
+        [
+          "Site_External_ID",
+          "string"
+        ],
+        [
+          "Site_Template",
+          "string"
+        ],
+        [
+          "Site_Uses_InSite",
+          "string"
+        ],
+        [
+          "Site_Uses_PD",
+          "string"
+        ],
+        [
+          "Site_Uses_VU",
+          "string"
+        ],
+        [
+          "Site_Receives_Downloads",
+          "string"
+        ],
+        [
+          "Site_Org_Key",
+          "string"
+        ],
+        [
+          "Site_DelRte_Key",
+          "string"
+        ],
+        [
+          "Site_DelRte_Stop",
+          "string"
+        ],
+        [
+          "Site_SPLC_Code",
+          "string"
+        ],
+        [
+          "Site_SIC_Code",
+          "string"
+        ],
+        [
+          "Site_Fuel_COGS_Date",
+          "string"
+        ],
+        [
+          "Site_Used_For_Drop_Ships",
+          "string"
+        ],
+        [
+          "Site_Deliv_Directions",
+          "string"
+        ],
+        [
+          "Site_Def_Fuel_Origin_By",
+          "string"
+        ],
+        [
+          "Site_Fuel_Vend_Auths",
+          "string"
+        ],
+        [
+          "Site_TrmnlGrp_Key",
+          "string"
+        ],
+        [
+          "Site_DropShip_Site_Key",
+          "string"
+        ],
+        [
+          "Site_Pass_On_Min_Freight_Chgs",
+          "string"
+        ],
+        [
+          "Site_Override_Min_Load",
+          "string"
+        ],
+        [
+          "Site_Override_Min_Load_Amt",
+          "string"
+        ],
+        [
+          "Site_DispArea_Key",
+          "string"
+        ],
+        [
+          "Site_Is_Terminal",
+          "string"
+        ],
+        [
+          "Site_County",
+          "string"
+        ],
+        [
+          "Site_Tax_ID",
+          "string"
+        ],
+        [
+          "Site_Linked_RMS",
+          "string"
+        ],
+        [
+          "Site_Exported_FocalPoint",
+          "string"
+        ],
+        [
+          "Site_TaxSchedCat_Key",
+          "string"
+        ],
+        [
+          "Host_Key",
+          "string"
+        ],
+        [
+          "Site_Invty_COGS_Date",
+          "string"
+        ],
+        [
+          "Site_Last_Stl_Date",
+          "string"
+        ],
+        [
+          "Site_Last_StlAccr_Date",
+          "string"
+        ],
+        [
+          "Site_Last_Comm_Date",
+          "string"
+        ],
+        [
+          "Site_Last_CommAccr_Date",
+          "string"
+        ],
+        [
+          "Site_FuelOrdRule_Key",
+          "string"
+        ],
+        [
+          "Site_Allow_Delivs_After_Hours",
+          "string"
+        ],
+        [
+          "Site_Is_MasterSite",
+          "string"
+        ],
+        [
+          "Site_MasterSite_Key",
+          "string"
+        ],
+        [
+          "Site_FPZone_Key",
+          "string"
+        ],
+        [
+          "Site_TrmnlCtlNo_Key",
+          "string"
+        ],
+        [
+          "Site_Deliv_TankRd_Method",
+          "string"
+        ],
+        [
+          "Site_GPS_Longitude",
+          "string"
+        ],
+        [
+          "Site_GPS_Latitude",
+          "string"
+        ],
+        [
+          "Site_Competitor_Radius",
+          "string"
+        ],
+        [
+          "Site_Competitor_Fuel_Pricing_Alert_Trait_Key",
+          "string"
+        ],
+        [
+          "Site_GL_Status",
+          "string"
+        ],
+        [
+          "Site_Def_Warehouse_Site_Key",
+          "string"
+        ],
+        [
+          "Site_Incl_In_WhPrcNtc",
+          "string"
+        ],
+        [
+          "Site_Is_BOLSite",
+          "string"
+        ],
+        [
+          "Site_Is_Trmnl_Key",
+          "string"
+        ],
+        [
+          "Site_Last_Royalty_Stl_Date",
+          "string"
+        ],
+        [
+          "Site_Last_Royalty_StlAccr_Date",
+          "string"
+        ],
+        [
+          "Site_WI_Third_Party_Owned",
+          "string"
+        ],
+        [
+          "Site_WI_Cust_Key",
+          "string"
+        ],
+        [
+          "Site_WI_Vend_Key",
+          "string"
+        ],
+        [
+          "Site_WI_CustLoc_Key",
+          "string"
+        ],
+        [
+          "Site_TimeZone_ID",
+          "string"
+        ],
+        [
+          "Site_Allow_Neg_Bulk_Fuel_Invty",
+          "string"
+        ],
+        [
+          "Site_DEP_Dest_Code",
+          "string"
+        ],
+        [
+          "Site_DestTaxType_TaxSchedCat_key",
+          "string"
+        ],
+        [
+          "Site_Is_ExxonMobil_Distributor",
+          "string"
+        ],
+        [
+          "Site_Distributor_ID",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "Site_Override_Transfer_Pricing",
+          "string"
+        ],
+        [
+          "Site_Use_Xfer_Price_Rules_On_Site_Orders",
+          "string"
+        ],
+        [
+          "Site_Unit_Basis_For_Site_Orders",
+          "string"
+        ],
+        [
+          "Site_Transfer_Pricing_Date_Override",
+          "string"
+        ],
+        [
+          "Site_Transfer_Pricing_Freight_Date_Override",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Vendor_CostZoneSites_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "vendor_costzonesites_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "VendCZSites_Key",
+          "string"
+        ],
+        [
+          "VendCZSites_VendAuth_Key",
+          "string"
+        ],
+        [
+          "VendCZSites_VendCostZone_Key",
+          "string"
+        ],
+        [
+          "VendCZSites_Site_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Paperwork_Batches_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "paperwork_batches_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "PaperworkBatch_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_PaperworkVer_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Site_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_BusDate",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Submit_Status",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Errors",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Warnings",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_User_Type",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_User",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_User_GUID",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_DateTime",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Update_Type",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Update_GUID",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Update_DateTime",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Invty_Type",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Invty_GUID",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Locked_For_Invty_DateTime",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Inventory_Posted",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Posting_Forms",
+          "string"
+        ],
+        [
+          "PaperworkBatch_HasBeen_Submitted",
+          "string"
+        ],
+        [
+          "PaperworkBatch_SiteInvProfDate_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_SiteOpItemLstDate_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_BusEnt_ID",
+          "string"
+        ],
+        [
+          "PaperworkBatch_SiteDRGen_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_TraitAssignment_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_SiteDRLkpDate_Key",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Needs_Recalc",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Reprocess_UPCs",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_Datetime",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_IN_Base",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_IN_DelNote_Rec",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_IN_PriceChanges",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_IN_OwnByDept",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_GL_Base",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_GL_AP",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_GL_CM",
+          "string"
+        ],
+        [
+          "Paperworkbatch_Post_GL_IR",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "PaperworkBatch_Contains_Fuel_Sticks",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ]
+      ]
+    },
+    "Vendor_Costs_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "vendor_costs_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "VendCost_Key",
+          "string"
+        ],
+        [
+          "VendCost_VendItem_Key",
+          "string"
+        ],
+        [
+          "VendCost_Type",
+          "string"
+        ],
+        [
+          "VendCost_EffDate",
+          "string"
+        ],
+        [
+          "VendCost_Is_Promo",
+          "string"
+        ],
+        [
+          "VendCost_Promo_End_Date",
+          "string"
+        ],
+        [
+          "VendCost_Pack_Cost",
+          "string"
+        ],
+        [
+          "VendCost_VendCostZone_Key",
+          "string"
+        ],
+        [
+          "VendCost_Site_Key",
+          "string"
+        ],
+        [
+          "VendCost_Discontinue",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ]
+      ]
+    },
+    "Vendor_Item_Attributes_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "vendor_item_attributes_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "VendItemAttr_Key",
+          "string"
+        ],
+        [
+          "VendItemAttr_VendItem_Key",
+          "string"
+        ],
+        [
+          "VendItemAttr_EffDate",
+          "string"
+        ],
+        [
+          "VendItemAttr_Reorderable",
+          "string"
+        ],
+        [
+          "VendItemAttr_Reclaimable",
+          "string"
+        ],
+        [
+          "VendItemAttr_PBManCostItemgrp_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "vendor_items_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "vendor_items_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "VendItem_Key",
+          "string"
+        ],
+        [
+          "VendItem_EffDate",
+          "string"
+        ],
+        [
+          "VendItem_Vend_Key",
+          "string"
+        ],
+        [
+          "VendItem_Number",
+          "string"
+        ],
+        [
+          "VendItem_Description",
+          "string"
+        ],
+        [
+          "VendItem_Size_Description",
+          "string"
+        ],
+        [
+          "VendItem_Item_Key",
+          "string"
+        ],
+        [
+          "VendItem_ItemPkg_Key",
+          "string"
+        ],
+        [
+          "VendItem_Allow_Partial_Pack",
+          "string"
+        ],
+        [
+          "VendItem_Discontinue_Date",
+          "string"
+        ],
+        [
+          "VendItem_Pack_Qty",
+          "string"
+        ],
+        [
+          "VendItem_Repl_VendItem_Key",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "VendItem_Order_Multiple_Qty",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    },
+    "Vendors_AMPM": {
+      "database": "transform_main_mobconv_pdi",
+      "table": "vendors_ampm",
+      "partition_cols": [
+        "source"
+      ],
+      "schema": [
+        [
+          "Vend_Key",
+          "string"
+        ],
+        [
+          "Vend_ID",
+          "string"
+        ],
+        [
+          "Vend_Tax_ID",
+          "string"
+        ],
+        [
+          "Vend_Tax_ID_Type",
+          "string"
+        ],
+        [
+          "Vend_Tax_ID_Is_Encrypted",
+          "string"
+        ],
+        [
+          "Vend_Tax_ID_Masked",
+          "string"
+        ],
+        [
+          "Vend_TIN_Status",
+          "string"
+        ],
+        [
+          "Vend_DUNS_ID",
+          "string"
+        ],
+        [
+          "Vend_SCAC_ID",
+          "string"
+        ],
+        [
+          "Vend_Description",
+          "string"
+        ],
+        [
+          "Vend_Alt_Description",
+          "string"
+        ],
+        [
+          "Vend_Address_1",
+          "string"
+        ],
+        [
+          "Vend_Address_2",
+          "string"
+        ],
+        [
+          "Vend_Address_3",
+          "string"
+        ],
+        [
+          "Vend_City",
+          "string"
+        ],
+        [
+          "Vend_State_Key",
+          "string"
+        ],
+        [
+          "Vend_Postal_Code",
+          "string"
+        ],
+        [
+          "Vend_Phone",
+          "string"
+        ],
+        [
+          "Vend_Alt_Phone",
+          "string"
+        ],
+        [
+          "Vend_FAX",
+          "string"
+        ],
+        [
+          "Vend_Masked_FAX",
+          "string"
+        ],
+        [
+          "Vend_Masked_Phone",
+          "string"
+        ],
+        [
+          "Vend_Masked_Alt_Phone",
+          "string"
+        ],
+        [
+          "Vend_Contact_Name",
+          "string"
+        ],
+        [
+          "Vend_Email_Address",
+          "string"
+        ],
+        [
+          "Vend_On_Hold",
+          "string"
+        ],
+        [
+          "Vend_Class",
+          "string"
+        ],
+        [
+          "Vend_VendType_Key",
+          "string"
+        ],
+        [
+          "Vend_Internal_Vendor",
+          "string"
+        ],
+        [
+          "Vend_Export_Vendor_ID",
+          "string"
+        ],
+        [
+          "Vend_Use_Default_Terms",
+          "string"
+        ],
+        [
+          "Vend_Default_APTerms_Key",
+          "string"
+        ],
+        [
+          "Vend_Fuel_APTerms_Key",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Invc_Units",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Invc_Has_Frt",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Invc_Has_DefTax",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Cost_Begin_Time",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Cost_Life_Units",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Cost_Lifetime",
+          "string"
+        ],
+        [
+          "Vend_Fuel_InterComp_Invc_Option",
+          "string"
+        ],
+        [
+          "Vend_Generate_Frt_Invoices",
+          "string"
+        ],
+        [
+          "Vend_GenFrt_Invc_Method",
+          "string"
+        ],
+        [
+          "Vend_GenFrt_Terms_Key",
+          "string"
+        ],
+        [
+          "Vend_GenFrt_Invc_Remit",
+          "string"
+        ],
+        [
+          "Vend_GenFrt_Remit_Export_File",
+          "string"
+        ],
+        [
+          "Vend_GenFrt_Remit_File_Path",
+          "string"
+        ],
+        [
+          "Vend_SPLC_Code",
+          "string"
+        ],
+        [
+          "Vend_OD_Vehicle_Required",
+          "string"
+        ],
+        [
+          "Vend_OD_Driver_Required",
+          "string"
+        ],
+        [
+          "Vend_OD_Time_Required",
+          "string"
+        ],
+        [
+          "Vend_OD_Odometer_Required",
+          "string"
+        ],
+        [
+          "Vend_Recon_Zero_Frt",
+          "string"
+        ],
+        [
+          "Vend_County",
+          "string"
+        ],
+        [
+          "Vend_Default_Curr_ID",
+          "string"
+        ],
+        [
+          "Vend_Allow_At_Site",
+          "string"
+        ],
+        [
+          "Vend_Deactivated",
+          "string"
+        ],
+        [
+          "Vend_Deactivated_Date",
+          "string"
+        ],
+        [
+          "Vend_OneTime",
+          "string"
+        ],
+        [
+          "Vend_Recon_Before_Billing",
+          "string"
+        ],
+        [
+          "Vend_Dispatch_Instructions",
+          "string"
+        ],
+        [
+          "Vend_Precision",
+          "string"
+        ],
+        [
+          "Vend_BOL_Confirmation_Required",
+          "string"
+        ],
+        [
+          "Vend_BOL_Confirmation_Units",
+          "string"
+        ],
+        [
+          "Vend_Use_BOL_LiftDate",
+          "string"
+        ],
+        [
+          "Vend_All_Sites",
+          "string"
+        ],
+        [
+          "Vend_Exp_Fuel_Orders",
+          "string"
+        ],
+        [
+          "Vend_Exp_FuelOrd_Format",
+          "string"
+        ],
+        [
+          "Vend_Exp_FuelOrd_Path",
+          "string"
+        ],
+        [
+          "Vend_Created_Date",
+          "string"
+        ],
+        [
+          "Vend_Mixed_Load_Min_Vol_Option",
+          "string"
+        ],
+        [
+          "Vend_Mixed_Split_Load_Purchase_Option",
+          "string"
+        ],
+        [
+          "Vend_Mixed_Split_Load_Sale_Option",
+          "string"
+        ],
+        [
+          "Vend_Mixed_Load_Min_Rate_Option",
+          "string"
+        ],
+        [
+          "Vend_Supplies_WI_Prods",
+          "string"
+        ],
+        [
+          "Vend_TransportMode_Key",
+          "string"
+        ],
+        [
+          "Vend_Credit_Invoice_Due_Date_Option",
+          "string"
+        ],
+        [
+          "Vend_BusCal_Key",
+          "string"
+        ],
+        [
+          "Vend_BOLs_Invc_By_Prod_Tax_Group",
+          "string"
+        ],
+        [
+          "Vend_Doc_Language_Key",
+          "string"
+        ],
+        [
+          "Vend_TaxAuth_Key",
+          "string"
+        ],
+        [
+          "Vend_TaxTypeCode_Key",
+          "string"
+        ],
+        [
+          "Vend_TaxTypeSubCatCode_Key",
+          "string"
+        ],
+        [
+          "Vend_Match_FuelInv_Date",
+          "string"
+        ],
+        [
+          "Vend_Match_FrtInv_Date",
+          "string"
+        ],
+        [
+          "Vend_Match_TaxInv_Date",
+          "string"
+        ],
+        [
+          "Vend_Match_Days_Before",
+          "string"
+        ],
+        [
+          "Vend_Match_Days_After",
+          "string"
+        ],
+        [
+          "Vend_Rnd_SurChg_Frt_Precision",
+          "string"
+        ],
+        [
+          "Vend_Rnd_SurChg_Frt",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Credit_Invoice_Due_Date_Option",
+          "string"
+        ],
+        [
+          "Vend_Calc_WI_Prch_Taxes",
+          "string"
+        ],
+        [
+          "Vend_WI_Export_POs",
+          "string"
+        ],
+        [
+          "Vend_WI_PO_Export_Format",
+          "string"
+        ],
+        [
+          "Vend_WI_PO_Export_FilePath",
+          "string"
+        ],
+        [
+          "Vend_WI_PO_Export_File_Option",
+          "string"
+        ],
+        [
+          "Vend_WI_PO_Export_AccountNo",
+          "string"
+        ],
+        [
+          "Vend_WI_PO_Export_Whrs_TransTable_Key",
+          "string"
+        ],
+        [
+          "Vend_National_Account",
+          "string"
+        ],
+        [
+          "Vend_Default_Buyback_RefNo",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Approval_Req",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Inv_Variance",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Default_APTerms_Key",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Recon_Before_Billing",
+          "string"
+        ],
+        [
+          "Vend_RequireVehicleDriverOption",
+          "string"
+        ],
+        [
+          "Vend_AutoGen_DeferTax_Invoice",
+          "string"
+        ],
+        [
+          "Vend_DeferTax_Pmt_Terms_Key",
+          "string"
+        ],
+        [
+          "Vend_GenWhsle_AR_Invoice",
+          "string"
+        ],
+        [
+          "Vend_Hazmat_No",
+          "string"
+        ],
+        [
+          "Vend_Itemize_Per_Load_Freight",
+          "string"
+        ],
+        [
+          "Vend_Use_Vehicle_Profit_Site_Custs",
+          "string"
+        ],
+        [
+          "Vend_Use_Vehicle_Profit_Site_Sites",
+          "string"
+        ],
+        [
+          "Vend_Match_FuelInv_Site",
+          "string"
+        ],
+        [
+          "Vend_Freight_InvoicedByLoad",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Export",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Expt_Format",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Expt_FilePath",
+          "string"
+        ],
+        [
+          "Vend_Buyback_Expt_File_Option",
+          "string"
+        ],
+        [
+          "ts",
+          "string"
+        ],
+        [
+          "Vend_Fuel_Cost_Negative_Allowed",
+          "string"
+        ],
+        [
+          "Vend_Use_Vehicle_Profit_Site_Purchases",
+          "string"
+        ],
+        [
+          "input_file_name",
+          "string"
+        ],
+        [
+          "job_id",
+          "string"
+        ],
+        [
+          "creation_datetime",
+          "string"
+        ],
+        [
+          "datahub_ds",
+          "string"
+        ],
+        [
+          "datahub_ts",
+          "string"
+        ],
+        [
+          "business_date",
+          "string"
+        ],
+        [
+          "source",
+          "string"
+        ]
+      ]
+    }
+  }
+}

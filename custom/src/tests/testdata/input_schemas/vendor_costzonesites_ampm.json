@@ -1,0 +1,32 @@
+{
+    "VendCZSites_Key" : {
+        "metadata": {},
+        "name": "VendCZSites_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCZSites_VendAuth_Key" : {
+        "metadata": {},
+        "name": "VendCZSites_VendAuth_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCZSites_VendCostZone_Key" : {
+        "metadata": {},
+        "name": "VendCZSites_VendCostZone_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "VendCZSites_Site_Key" : {
+        "metadata": {},
+        "name": "VendCZSites_Site_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

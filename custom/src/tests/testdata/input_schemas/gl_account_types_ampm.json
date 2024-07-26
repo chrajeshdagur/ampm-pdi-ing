@@ -1,0 +1,26 @@
+{
+    "GLAcctType_Key" : {
+        "metadata": {},
+        "name": "GLAcctType_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctType_ID" : {
+        "metadata": {},
+        "name": "GLAcctType_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctType_Usage" : {
+        "metadata": {},
+        "name": "GLAcctType_Usage",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

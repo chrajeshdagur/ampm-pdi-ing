@@ -1,0 +1,5 @@
+ItemStdInfo_Key,ItemStdInfo_Item_Key,ItemStdInfo_Sale_Activated_Cost,ItemStdInfo_ItemSize_Key,ItemStdInfo_RtlExt_RtlPkg_Key,ItemStdInfo_Measurement_Type,ItemStdInfo_Measurement_Value,ItemStdInfo_SellUOM_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+18363,19701,0,23,2,,.00000,,000000000146DC7B,20240223item_standard_info_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+18364,19702,0,1741,2,,.00000,,000000000146DC7C,20240223item_standard_info_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+18365,19703,0,23,2,,.00000,,000000000146DC7D,20240223item_standard_info_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+18366,19704,0,23,2,,.00000,,000000000146DC7E,20240223item_standard_info_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

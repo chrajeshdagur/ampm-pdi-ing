@@ -1,0 +1,30 @@
+# gazelle:map_kind py_binary glue_4_py_binary //dataworx:defs.bzl
+# gazelle:map_kind py_library glue_4_py_library //dataworx:defs.bzl
+# gazelle:map_kind py_test glue_4_py_test //dataworx:defs.bzl
+
+load("@bp_bazel//dataworx:defs.bzl", "glue_4_py_library")
+
+# gazelle:python_root
+# gazelle:resolve py common //mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/build_dataset
+
+glue_4_py_library(
+    name = "build_dataset",
+    srcs = [
+        "__init__.py",
+        "common.py",
+        "transform.py",
+    ],
+    imports = [
+        ".",
+        "../../../../../..",
+    ],
+    visibility = ["//:__subpackages__"],
+    deps = [
+        "@aws_glue_4_libs//:libs",
+        "@glue_4_python_deps_boto3//:pkg",
+        "@glue_4_python_deps_botocore//:pkg",
+        "@glue_4_python_deps_pandas//:pkg",
+        "@glue_4_python_deps_pyspark//:pkg",
+        "@glue_4_python_deps_python_dateutil//:pkg",
+    ],
+)

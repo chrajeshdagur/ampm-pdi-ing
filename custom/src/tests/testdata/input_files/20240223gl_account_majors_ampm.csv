@@ -1,0 +1,5 @@
+GLAcctMaj_Key,GLAcctMaj_Description,GLAcctMaj_Major_Acct,GLAcctMaj_Sub_Acct,GLAcctMaj_GLAcctType_Key,GLAcctMaj_StmtCat_Key,GLAcctMaj_GLStmtGrp_Key,GLAcctMaj_Restricted,GLAcctMaj_Post_Detail,GLAcctMaj_Disabled,GLAcctMaj_Disable_Date,GLAcctMaj_Disable_User,GLAcctMaj_Post_By_Site,GLAcctMaj_Include_In_Revalue,GLAcctMaj_Has_Activity,GLAcctMaj_Allow_Owning_Entity,GLAcctMaj_TrackAssetIDs,GLAcctMaj_AssetIDsRequired,ts
+1,Cash In Bank,1001,300,0,,11,-1,-1,0,,,-1,0,-1,0,0,0,0000000002474190
+2,Cash in Transit,1021,101,0,,11,-1,-1,0,,,-1,0,-1,0,0,0,0000000000F1B7FF
+3,Station Cash Fund,1090,100,0,,11,-1,-1,0,,,-1,0,-1,0,0,0,0000000000F1B801
+4,Store Change Fund,1090,200,0,,11,-1,-1,0,,,-1,0,-1,0,0,0,000000000111B6EF

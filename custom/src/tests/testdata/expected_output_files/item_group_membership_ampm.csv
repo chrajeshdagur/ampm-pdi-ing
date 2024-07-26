@@ -1,0 +1,5 @@
+ItemGrpMemb_Key,ItemGrpMemb_Item_Key,ItemGrpMemb_Type,ItemGrpMemb_Level,ItemGrpMemb_ItemGrp_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+80932,20225,0,2,31,0000000001EF9C42,20240223item_group_membership_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+80954,20226,0,2,31,0000000001EF9D4C,20240223item_group_membership_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+81014,20241,0,2,31,0000000001F161EB,20240223item_group_membership_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+81462,20352,0,2,31,0000000002104769,20240223item_group_membership_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

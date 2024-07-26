@@ -1,0 +1,5 @@
+ItemAttrValItemDtl_Key,ItemAttrValItemDtl_ItemAttrDate_Key,ItemAttrValItemDtl_Type,ItemAttrValItemDtl_ItemAttrValGrp_Key,ItemAttrValItemDtl_ItemGrp_Key,ItemAttrValItemDtl_Item_Key,ItemAttrValItemDtl_ItemTaxGrp_Key,ItemAttrValItemDtl_Value,ItemAttrValItemDtl_RtlPkg_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+720,22,0,147,,53,,high,-1,0000000000E18FDF,20240223item_attrib_valueitemdetails_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+560,22,0,147,,18041,,high,-1,0000000000C45073,20240223item_attrib_valueitemdetails_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+561,22,0,147,,18045,,high,-1,0000000000C45076,20240223item_attrib_valueitemdetails_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+721,22,0,147,,18631,,high,-1,0000000000E18FE0,20240223item_attrib_valueitemdetails_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

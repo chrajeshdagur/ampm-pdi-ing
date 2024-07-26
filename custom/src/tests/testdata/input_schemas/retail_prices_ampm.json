@@ -1,0 +1,44 @@
+{
+    "Site_ID" : {
+        "metadata": {},
+        "name": "Site_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "Site_External_ID" : {
+        "metadata": {},
+        "name": "Site_External_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Number" : {
+        "metadata": {},
+        "name": "ItemUPC_Number",
+        "nullable": true,
+        "type": "string"
+    },
+    "Item_Description" : {
+        "metadata": {},
+        "name": "Item_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "RetailPrice" : {
+        "metadata": {},
+        "name": "RetailPrice",
+        "nullable": true,
+        "type": "string"
+    },
+    "RtlPrc_Eff_Date" : {
+        "metadata": {},
+        "name": "RtlPrc_Eff_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "GrossPrice" : {
+        "metadata": {},
+        "name": "GrossPrice",
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,51 @@
+load("@bp_bazel//tools/python:defs.bzl", "py_library", "py_test")
+
+# gazelle:resolve py s3_listing //mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/s3_listing
+# gazelle:resolve py build_dataset //mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/build_dataset
+
+py_library(
+    name = "tests",
+    testonly = True,
+    srcs = [
+        "__init__.py",
+        "conftest.py",
+    ],
+    data = [
+        "//mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/config:datahub_config.json",
+        "//mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/config:hwm.json",
+    ],
+    imports = [".."],
+    visibility = ["//:__subpackages__"],
+    deps = [
+        "@glue_4_python_deps_boto3//:pkg",
+        "@glue_4_python_deps_botocore//:pkg",
+        "@glue_4_python_deps_moto//:pkg",
+        "@glue_4_python_deps_pyspark//:pkg",
+        "@glue_4_python_deps_pytest//:pkg",
+    ],
+)
+
+py_test(
+    name = "test_s3_listing",
+    srcs = ["test_s3_listing.py"],
+    data = glob(["testdata/**"]),
+    imports = [".."],
+    deps = [
+        ":tests",
+        "//mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/s3_listing",
+        "@glue_4_python_deps_pytest//:pkg",
+    ],
+)
+
+py_test(
+    name = "test_build_dataset",
+    srcs = ["test_build_dataset.py"],
+    data = glob(["testdata/**"]),
+    imports = [".."],
+    deps = [
+        ":tests",
+        "//mobconv/mobconv/transform_zone/ampm-pdi-ing/custom/src/build_dataset",
+        "@glue_4_python_deps_chispa//:pkg",
+        "@glue_4_python_deps_pytest//:pkg",
+    ],
+)

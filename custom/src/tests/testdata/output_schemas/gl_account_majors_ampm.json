@@ -1,0 +1,151 @@
+{
+    "GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Description" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Major_Acct" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Major_Acct",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Sub_Acct" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Sub_Acct",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_GLAcctType_Key" : {
+        "metadata": {},
+        "name": "GLAcctMaj_GLAcctType_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_StmtCat_Key" : {
+        "metadata": {},
+        "name": "GLAcctMaj_StmtCat_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_GLStmtGrp_Key" : {
+        "metadata": {},
+        "name": "GLAcctMaj_GLStmtGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Restricted" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Restricted",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Post_Detail" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Post_Detail",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Disabled" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Disabled",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Disable_Date" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Disable_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Disable_User" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Disable_User",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Post_By_Site" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Post_By_Site",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Include_In_Revalue" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Include_In_Revalue",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Has_Activity" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Has_Activity",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_Allow_Owning_Entity" : {
+        "metadata": {},
+        "name": "GLAcctMaj_Allow_Owning_Entity",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_TrackAssetIDs" : {
+        "metadata": {},
+        "name": "GLAcctMaj_TrackAssetIDs",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcctMaj_AssetIDsRequired" : {
+        "metadata": {},
+        "name": "GLAcctMaj_AssetIDsRequired",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

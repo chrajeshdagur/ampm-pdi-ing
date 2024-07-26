@@ -1,0 +1,80 @@
+{
+    "ItemMfgr_Key" : {
+        "metadata": {},
+        "name": "ItemMfgr_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_ID" : {
+        "metadata": {},
+        "name": "ItemMfgr_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Description" : {
+        "metadata": {},
+        "name": "ItemMfgr_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_ItemMfgrType_Key" : {
+        "metadata": {},
+        "name": "ItemMfgr_ItemMfgrType_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Address_1" : {
+        "metadata": {},
+        "name": "ItemMfgr_Address_1",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Address_2" : {
+        "metadata": {},
+        "name": "ItemMfgr_Address_2",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Address_3" : {
+        "metadata": {},
+        "name": "ItemMfgr_Address_3",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_City" : {
+        "metadata": {},
+        "name": "ItemMfgr_City",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_State_Key" : {
+        "metadata": {},
+        "name": "ItemMfgr_State_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Postal_Code" : {
+        "metadata": {},
+        "name": "ItemMfgr_Postal_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Default_Curr_ID" : {
+        "metadata": {},
+        "name": "ItemMfgr_Default_Curr_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemMfgr_Doc_Lang_Key" : {
+        "metadata": {},
+        "name": "ItemMfgr_Doc_Lang_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

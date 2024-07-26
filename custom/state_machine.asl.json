@@ -1,0 +1,250 @@
+{
+    "Comment": "Amazon States Language using",
+    "StartAt": "Octagon Registration",
+    "States": {
+        "Octagon Registration": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::lambda:invoke",
+            "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "${OctagonRegistrationLambda}"
+            },
+            "ResultSelector": {
+                "body.$": "$.Payload",
+                "statusCode.$": "$.StatusCode",
+                "requestId.$": "$.SdkResponseMetadata.RequestId"
+            },
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "Lambda.ServiceException",
+                        "Lambda.AWSLambdaException",
+                        "Lambda.SdkClientException"
+                    ],
+                    "IntervalSeconds": 2,
+                    "MaxAttempts": 6,
+                    "BackoffRate": 2
+                }
+            ],
+            "Next": "Read HWM Configuration"
+        },
+        "Read HWM Configuration": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::lambda:invoke",
+            "Parameters": {
+                "Payload": {
+                    "peh_id.$": "$.body.peh_id",
+                    "action": "READ"
+                },
+                "FunctionName": "${HWMConfigurationLambda}"
+            },
+            "ResultSelector": {
+                "body.$": "$.Payload",
+                "requestId.$": "$.SdkResponseMetadata.RequestId"
+            },
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "Lambda.ServiceException",
+                        "Lambda.AWSLambdaException",
+                        "Lambda.SdkClientException"
+                    ],
+                    "IntervalSeconds": 2,
+                    "MaxAttempts": 6,
+                    "BackoffRate": 2
+                }
+            ],
+            "Catch": [
+                {
+                    "ErrorEquals": [
+                        "States.ALL"
+                    ],
+                    "ResultPath": "$.error-info",
+                    "Next": "Octagon: Log Failure"
+                }
+            ],
+            "Next": "Build Source Keys"
+        },
+        "Build Source Keys": {
+            "Type": "Task",
+            "Comment": "Sort keys based on datahub ds/ts",
+            "Resource": "arn:aws:states:::lambda:invoke",
+            "Parameters": {
+                "Payload.$": "$.body",
+                "FunctionName": "${S3ListingLambda}"
+            },
+            "ResultSelector": {
+                "body.$": "$.Payload",
+                "requestId.$": "$.SdkResponseMetadata.RequestId"
+            },
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "Lambda.ServiceException",
+                        "Lambda.AWSLambdaException",
+                        "Lambda.SdkClientException"
+                    ],
+                    "IntervalSeconds": 2,
+                    "MaxAttempts": 6,
+                    "BackoffRate": 2
+                }
+            ],
+            "Catch": [
+                {
+                    "ErrorEquals": [
+                        "States.ALL"
+                    ],
+                    "ResultPath": "$.error-info",
+                    "Next": "Octagon: Log Failure"
+                }
+            ],
+            "Next": "Run Glue Choice"
+        },
+        "Run Glue Choice": {
+            "Type": "Choice",
+            "InputPath": "$.body",
+            "Choices": [
+                {
+                    "Variable": "$.num_keys",
+                    "NumericEquals": 0,
+                    "Next": "Pipeline Succeeded"
+                }
+            ],
+            "Default": "Unzip Files"
+        },
+        "Unzip Files": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::lambda:invoke",
+            "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "${UnzipLoad}"
+            },
+            "ResultSelector": {
+                "body.$": "$.Payload",
+                "requestId.$": "$.SdkResponseMetadata.RequestId"
+            },
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "Lambda.ServiceException",
+                        "Lambda.AWSLambdaException",
+                        "Lambda.SdkClientException"
+                    ],
+                    "IntervalSeconds": 2,
+                    "MaxAttempts": 6,
+                    "BackoffRate": 2
+                }
+            ],
+            "Catch": [
+                {
+                    "ErrorEquals": [
+                        "States.ALL"
+                    ],
+                    "ResultPath": "$.error-info",
+                    "Next": "Octagon: Log Failure"
+                }
+            ],
+            "Next": "Octagon: Log Job Start"
+        },
+        "Octagon: Log Job Start": {
+            "Type": "Task",
+            "Comment": "Lambda to log glue job start to Octagon",
+            "Resource": "${OctagonLogger}",
+            "Parameters": {
+                "peh_id.$": "$.body.peh_id",
+                "log-type": "status",
+                "log-component": "Glue Job",
+                "log-msg": "Started glue job for data transformation"
+            },
+            "ResultPath": null,
+            "Next": "Build Dataset"
+        },
+        "Build Dataset": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::glue:startJobRun.sync",
+            "InputPath": "$.body",
+            "Parameters": {
+                "JobName": "${TransformGlueJob}",
+                "ExecutionClass.$": "$.glue_execution_class",
+                "Arguments": {
+                    "--PEH_ID.$": "$.peh_id",
+                    "--HWM_ID.$": "$.hwm_id",
+                    "--HWM_TYPE.$": "$.hwm_type",
+                    "--SOURCE_KEYS_PATH.$": "$.source_keys_path",
+                    "--LAST_KEY.$": "$.last_key"
+                }
+            },
+            "ResultPath": null,
+            "Next": "Octagon: Log Crawler Start",
+            "Catch": [
+                {
+                    "ErrorEquals": [
+                        "States.ALL"
+                    ],
+                    "ResultPath": "$.error-info",
+                    "Next": "Octagon: Log Failure"
+                }
+            ]
+        },
+        "Octagon: Log Crawler Start": {
+            "Type": "Task",
+            "Comment": "Lambda to log crawler start to Octagon",
+            "Resource": "${OctagonLogger}",
+            "Parameters": {
+                "peh_id.$": "$.body.peh_id",
+                "log-type": "status",
+                "log-component": "Glue Crawler",
+                "log-msg": "Data transformation completed. Starting glue crawler"
+            },
+            "ResultPath": null,
+            "Next": "Start Crawler"
+        },
+        "Start Crawler": {
+            "Type": "Task",
+            "Next": "Octagon: Log Success",
+            "Resource": "arn:aws:states:::aws-sdk:glue:startCrawler",
+            "Parameters": {
+                "Name": "${GlueCrawler}"
+            },
+            "Catch": [
+                {
+                    "ErrorEquals": [
+                        "States.ALL"
+                    ],
+                    "ResultPath": "$.error-info",
+                    "Next": "Octagon: Log Failure"
+                }
+            ],
+            "ResultPath": null
+        },
+        "Octagon: Log Success": {
+            "Type": "Task",
+            "Comment": "Lambda to log pipeline success to Octagon",
+            "Next": "Pipeline Succeeded",
+            "Resource": "${OctagonLogger}",
+            "Parameters": {
+                "peh_id.$": "$.body.peh_id",
+                "log-type": "pipeline_success",
+                "log-msg": "COMPLETED"
+            }
+        },
+        "Octagon: Log Failure": {
+            "Type": "Task",
+            "Comment": "Lambda to log pipeline failure errors to Octagon",
+            "Resource": "${OctagonLogger}",
+            "Parameters": {
+                "peh_id.$": "$.body.peh_id",
+                "log-type": "pipeline_failed",
+                "log-msg.$": "$.error-info"
+            },
+            "Next": "Pipeline Failed"
+        },
+        "Pipeline Failed": {
+            "Type": "Fail",
+            "Error": "Pipeline Failure"
+        },
+        "Pipeline Succeeded": {
+            "Type": "Succeed"
+        }
+    }
+}

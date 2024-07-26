@@ -1,0 +1,5 @@
+RtlPkg_Key,RtlPkg_Code,RtlPkg_Type,RtlPkg_RtlPkg_Key,RtlPkg_Quantity,RtlPkg_Disabled,RtlPkg_Item_Quantity,RtlPkg_IsInvtyValPkg,ts,RtlPkg_IsNotForFranchiseeUse,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+1,PPK1,0,,1.000,0,1.000,0,0000000000028DCC,0,20240223retail_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+2,EACH,0,,1.000,0,1.000,0,0000000000028DCF,0,20240223retail_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+3,DEVICE,0,,1.000,0,1.000,0,000000000002FC13,0,20240223retail_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+4,POD,0,,1.000,0,1.000,0,000000000002FC16,0,20240223retail_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

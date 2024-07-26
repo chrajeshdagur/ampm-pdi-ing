@@ -1,0 +1,433 @@
+{
+    "ItemGrp_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ItemGrpLvl_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_ItemGrpLvl_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Parent_ItemGrp_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Parent_ItemGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ID" : {
+        "metadata": {},
+        "name": "ItemGrp_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Description" : {
+        "metadata": {},
+        "name": "ItemGrp_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Accrue_Sales_Tax" : {
+        "metadata": {},
+        "name": "ItemGrp_Accrue_Sales_Tax",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Last_Item_No_Gen" : {
+        "metadata": {},
+        "name": "ItemGrp_Last_Item_No_Gen",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_External_ID" : {
+        "metadata": {},
+        "name": "ItemGrp_External_ID",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Do_Not_Use_Sizes" : {
+        "metadata": {},
+        "name": "ItemGrp_Do_Not_Use_Sizes",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Expense" : {
+        "metadata": {},
+        "name": "ItemGrp_Expense",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Use_Weight_Volume_For_Items" : {
+        "metadata": {},
+        "name": "ItemGrp_Use_Weight_Volume_For_Items",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_StoreUse_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_StoreUse_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_BadMerch_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_BadMerch_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Waste_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Waste_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Spoilage_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Spoilage_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_QtyDisc_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_QtyDisc_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Promo_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Promo_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_InvAdj_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_InvAdj_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_AuditAdj_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_AuditAdj_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_RebateCost_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_RebateCost_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_COS_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_COS_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_PurchXferCost_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_PurchXferCost_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_PurchXferRtl_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_PurchXferRtl_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_RtlPriceChg_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_RtlPriceChg_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_EndingInvCost_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_EndingInvCost_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_EndingInvRtl_DataID_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_EndingInvRtl_DataID_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Allowed_RtlAdj_Types" : {
+        "metadata": {},
+        "name": "ItemGrp_Allowed_RtlAdj_Types",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Allowed_CstAdj_Types" : {
+        "metadata": {},
+        "name": "ItemGrp_Allowed_CstAdj_Types",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Allowed_ItmAdj_Types" : {
+        "metadata": {},
+        "name": "ItemGrp_Allowed_ItmAdj_Types",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Process_Inv_Upd_Alerts" : {
+        "metadata": {},
+        "name": "ItemGrp_Process_Inv_Upd_Alerts",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Alert_MailGroup_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Alert_MailGroup_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Alert_End_Inv_Neg" : {
+        "metadata": {},
+        "name": "ItemGrp_Alert_End_Inv_Neg",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Alert_Cost_GT_Rtl" : {
+        "metadata": {},
+        "name": "ItemGrp_Alert_Cost_GT_Rtl",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Target_Rtl_Margin_Pct" : {
+        "metadata": {},
+        "name": "ItemGrp_Target_Rtl_Margin_Pct",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Target_Rtl_Margin_Var" : {
+        "metadata": {},
+        "name": "ItemGrp_Target_Rtl_Margin_Var",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Audit_Type" : {
+        "metadata": {},
+        "name": "ItemGrp_Audit_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Invty_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Invty_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_COS_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_COS_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_AudAdj_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_AudAdj_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_InvtyAdj_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_InvtyAdj_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Promo_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Promo_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_QtyDisc_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_QtyDisc_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_StoreUse_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_StoreUse_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_BadMerch_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_BadMerch_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Waste_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Waste_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Spoil_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Spoil_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_UserDef1_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_UserDef1_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_UserDef2_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_UserDef2_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_UserDef3_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_UserDef3_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ProfCtr_Type_Code" : {
+        "metadata": {},
+        "name": "ItemGrp_ProfCtr_Type_Code",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Expense_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_Expense_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ItemTaxGrp_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_ItemTaxGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_RollupPrcChgAdj" : {
+        "metadata": {},
+        "name": "ItemGrp_RollupPrcChgAdj",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ExcludeFromPrcChgAdj" : {
+        "metadata": {},
+        "name": "ItemGrp_ExcludeFromPrcChgAdj",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Item_Invty_Grp_Dtl_GL_Option" : {
+        "metadata": {},
+        "name": "ItemGrp_Item_Invty_Grp_Dtl_GL_Option",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Alert_Invalid_WAC" : {
+        "metadata": {},
+        "name": "ItemGrp_Alert_Invalid_WAC",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Alert_Neg_WAC" : {
+        "metadata": {},
+        "name": "ItemGrp_Alert_Neg_WAC",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Suppress_Alert_End_Inv_Neg_OII" : {
+        "metadata": {},
+        "name": "ItemGrp_Suppress_Alert_End_Inv_Neg_OII",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_InvRecon_GLAcctMaj_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_InvRecon_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_TransferExclude" : {
+        "metadata": {},
+        "name": "ItemGrp_TransferExclude",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Retail" : {
+        "metadata": {},
+        "name": "ItemGrp_Retail",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Cost" : {
+        "metadata": {},
+        "name": "ItemGrp_Cost",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_Item" : {
+        "metadata": {},
+        "name": "ItemGrp_Item",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ExclCostQtyExceptions" : {
+        "metadata": {},
+        "name": "ItemGrp_ExclCostQtyExceptions",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrp_ProdTaxGrp_Key" : {
+        "metadata": {},
+        "name": "ItemGrp_ProdTaxGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

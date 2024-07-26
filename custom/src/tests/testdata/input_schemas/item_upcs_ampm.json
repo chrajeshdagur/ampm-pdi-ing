@@ -1,0 +1,80 @@
+{
+    "ItemUPC_Key" : {
+        "metadata": {},
+        "name": "ItemUPC_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_ItemPkg_Key" : {
+        "metadata": {},
+        "name": "ItemUPC_ItemPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Item_Key" : {
+        "metadata": {},
+        "name": "ItemUPC_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Number" : {
+        "metadata": {},
+        "name": "ItemUPC_Number",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Scan_Modifier" : {
+        "metadata": {},
+        "name": "ItemUPC_Scan_Modifier",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_UltraLong_Desc" : {
+        "metadata": {},
+        "name": "ItemUPC_UltraLong_Desc",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Long_Desc" : {
+        "metadata": {},
+        "name": "ItemUPC_Long_Desc",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Short_Desc" : {
+        "metadata": {},
+        "name": "ItemUPC_Short_Desc",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_UltraShort_Desc" : {
+        "metadata": {},
+        "name": "ItemUPC_UltraShort_Desc",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Discontinue_Date" : {
+        "metadata": {},
+        "name": "ItemUPC_Discontinue_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_Sell_UOM_Units" : {
+        "metadata": {},
+        "name": "ItemUPC_Sell_UOM_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemUPC_DescriptionRequireApproval" : {
+        "metadata": {},
+        "name": "ItemUPC_DescriptionRequireApproval",
+        "nullable": true,
+        "type": "string"
+    }
+}

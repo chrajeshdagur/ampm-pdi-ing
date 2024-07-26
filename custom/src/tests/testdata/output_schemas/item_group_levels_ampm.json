@@ -1,0 +1,73 @@
+{
+    "ItemGrpLvl_Key" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Type" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Level" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Level",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Description" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_ShortDescription" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_ShortDescription",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "ItemGrpLvl_Key" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Type" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Level" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Level",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_Description" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_Description",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemGrpLvl_ShortDescription" : {
+        "metadata": {},
+        "name": "ItemGrpLvl_ShortDescription",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    }
+}

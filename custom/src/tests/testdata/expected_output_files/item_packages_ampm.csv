@@ -1,0 +1,5 @@
+ItemPkg_Key,ItemPkg_Item_Key,ItemPkg_RtlPkg_Key,ItemPkg_Purch,ItemPkg_Sell,ItemPkg_Audit,ItemPkg_Label,ItemPkg_Discontinue_Sale_Date,ItemPkg_Discontinue_Purch_Date,ItemPkg_Width,ItemPkg_Height,ItemPkg_Depth,ItemPkg_Ship_Weight,ItemPkg_Ship_Weight_Units,ItemPkg_IsIngredient,ItemPkg_Ingr_Key,ItemPkg_VATCategory_Key,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+24724,12535,2,0,-1,1,-1,,,.0000,.0000,.0000,.0000,0,0,,,0000000000531FA5,20240223item_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+24736,12535,7,-1,0,1,0,,,.0000,.0000,.0000,.0000,,0,,,000000000053213F,20240223item_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+24725,12536,2,0,-1,1,-1,,,.0000,.0000,.0000,.0000,0,0,,,0000000000531FA6,20240223item_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+24737,12536,7,-1,0,1,0,,,.0000,.0000,.0000,.0000,,0,,,0000000000532140,20240223item_packages_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

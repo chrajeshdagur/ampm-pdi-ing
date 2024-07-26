@@ -1,0 +1,97 @@
+{
+    "ItemAttrValItemDtl_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_ItemAttrDate_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_ItemAttrDate_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_Type" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_Type",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_ItemAttrValGrp_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_ItemAttrValGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_ItemGrp_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_ItemGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_Item_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_ItemTaxGrp_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_ItemTaxGrp_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_Value" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_Value",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemAttrValItemDtl_RtlPkg_Key" : {
+        "metadata": {},
+        "name": "ItemAttrValItemDtl_RtlPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

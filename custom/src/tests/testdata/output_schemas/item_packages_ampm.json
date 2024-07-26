@@ -1,0 +1,145 @@
+{
+    "ItemPkg_Key" : {
+        "metadata": {},
+        "name": "ItemPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Item_Key" : {
+        "metadata": {},
+        "name": "ItemPkg_Item_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_RtlPkg_Key" : {
+        "metadata": {},
+        "name": "ItemPkg_RtlPkg_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Purch" : {
+        "metadata": {},
+        "name": "ItemPkg_Purch",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Sell" : {
+        "metadata": {},
+        "name": "ItemPkg_Sell",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Audit" : {
+        "metadata": {},
+        "name": "ItemPkg_Audit",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Label" : {
+        "metadata": {},
+        "name": "ItemPkg_Label",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Discontinue_Sale_Date" : {
+        "metadata": {},
+        "name": "ItemPkg_Discontinue_Sale_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Discontinue_Purch_Date" : {
+        "metadata": {},
+        "name": "ItemPkg_Discontinue_Purch_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Width" : {
+        "metadata": {},
+        "name": "ItemPkg_Width",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Height" : {
+        "metadata": {},
+        "name": "ItemPkg_Height",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Depth" : {
+        "metadata": {},
+        "name": "ItemPkg_Depth",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Ship_Weight" : {
+        "metadata": {},
+        "name": "ItemPkg_Ship_Weight",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Ship_Weight_Units" : {
+        "metadata": {},
+        "name": "ItemPkg_Ship_Weight_Units",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_IsIngredient" : {
+        "metadata": {},
+        "name": "ItemPkg_IsIngredient",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_Ingr_Key" : {
+        "metadata": {},
+        "name": "ItemPkg_Ingr_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ItemPkg_VATCategory_Key" : {
+        "metadata": {},
+        "name": "ItemPkg_VATCategory_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts" : {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}

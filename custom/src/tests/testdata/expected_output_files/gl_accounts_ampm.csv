@@ -1,0 +1,5 @@
+glacct_key,glacct_glacctmaj_key,glacct_busent_acct,glacct_site_acct,glacct_pctr_acct,glacct_disabled,glacct_disable_date,glacct_disable_user,ts,input_file_name,job_id,creation_datetime,datahub_ds,datahub_ts,business_date,source
+5,5,1,0,0,0,,,00000000000101DA,20240223gl_accounts_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+6,5,2,0,0,0,,,00000000000101DB,20240223gl_accounts_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+53,65,1,0,0,0,,,0000000000010247,20240223gl_accounts_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM
+54,65,2,0,0,0,,,0000000000010248,20240223gl_accounts_ampm.csv,test_peh,2024-02-23 08:37:37.851514,20240223,083844,2024-02-23,AMPM

@@ -1,0 +1,91 @@
+{
+    "GLAcct_Key": {
+        "metadata": {},
+        "name": "GLAcct_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_GLAcctMaj_Key": {
+        "metadata": {},
+        "name": "GLAcct_GLAcctMaj_Key",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_BusEnt_Acct": {
+        "metadata": {},
+        "name": "GLAcct_BusEnt_Acct",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_Site_Acct": {
+        "metadata": {},
+        "name": "GLAcct_Site_Acct",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_PCtr_Acct": {
+        "metadata": {},
+        "name": "GLAcct_PCtr_Acct",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_Disabled": {
+        "metadata": {},
+        "name": "GLAcct_Disabled",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_Disable_Date": {
+        "metadata": {},
+        "name": "GLAcct_Disable_Date",
+        "nullable": true,
+        "type": "string"
+    },
+    "GLAcct_Disable_User": {
+        "metadata": {},
+        "name": "GLAcct_Disable_User",
+        "nullable": true,
+        "type": "string"
+    },
+    "ts": {
+        "metadata": {},
+        "name": "ts",
+        "nullable": true,
+        "type": "string"
+    },
+    "input_file_name" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "job_id" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "creation_datetime" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "timestamp"
+    },
+    "datahub_ds" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "datahub_ts" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "business_date" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    },
+    "source" : {
+        "metadata": {},
+        "nullable": true,
+        "type": "string"
+    }
+}
