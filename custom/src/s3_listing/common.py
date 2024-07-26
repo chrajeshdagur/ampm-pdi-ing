@@ -13,6 +13,7 @@ logging.basicConfig(
     format="%(levelname)s:%(module)s.%(name)s.%(funcName)s: %(message)s",
 )
 
+# adding the test comment
 
 class Utils(object):
     def __init__(self, s3_client, ddb) -> None:
